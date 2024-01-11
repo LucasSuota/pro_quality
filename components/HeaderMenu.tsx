@@ -1,12 +1,12 @@
 "use client";
 
 import { HeaderMenuItemsList } from "@/constants";
+import { LogoBlack } from "@/src/assets/images";
 import { MenuIcon } from "@/src/assets/svgs";
-import { Transition } from "@headlessui/react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const HeaderMenu = () => {
   const menuItemVariants = {
@@ -30,28 +30,30 @@ const HeaderMenu = () => {
 
   return (
     <div>
-      <motion.img
-        src={MenuIcon}
-        width={48}
-        height={48}
-        alt={"Menu Icon"}
-        onClick={handleMenuOpen}
-        whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
-        whileTap={{ scale: 0.9, transition: { duration: 0.2 } }}
-      />
+      <div className="relative sm:w-[48px] sm:h-[48px] w-[32px] h-[32px]">
+        <Image
+          src={MenuIcon}
+          width={48}
+          height={48}
+          alt="Menu Icon"
+          onClick={handleMenuOpen}
+          className="cursor-pointer"
+        />
+      </div>
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="absolute right-0 text-right bg-progray w-full"
+            initial={{ opacity: 0, y: "-100%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "-100%" }}
+            transition={{ duration: 0.2, ease: "easeInOut" }}
+            className="absolute py-4 right-0 text-right bg-progray w-full mt-2"
           >
             {HeaderMenuItemsList.map((item, index) => (
               <Link href={item.link} key={index}>
                 <motion.p
-                  className="font-proquality hover:text-problue text-5xl mx-10"
+                  className="font-proquality hover:text-problue active:text-problack text-5xl mt-1 mx-10"
                   variants={menuItemVariants}
                   initial="hidden"
                   animate="visible"
