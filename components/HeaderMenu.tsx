@@ -20,14 +20,6 @@ const HeaderMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.body.style.overflow = "visible";
-    };
-  }, [isOpen]);
-
   return (
     <div>
       <div className="relative sm:w-[48px] sm:h-[48px] w-[32px] h-[32px]">
