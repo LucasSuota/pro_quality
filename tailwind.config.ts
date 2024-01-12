@@ -21,7 +21,7 @@ const config: Config = {
         proSubTitles: "20px",
         proP: "16px",
         proSmTitles: "20px",
-        proSmSubTitles: "16px",
+        proSmSubTitles: "18px",
         proSmP: "12px",
       },
     },

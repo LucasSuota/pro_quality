@@ -1,4 +1,11 @@
-import { Search, Check } from "@/src/assets/svgs";
+import {
+  Search,
+  Check,
+  LightBulb,
+  Gear,
+  Problems,
+  Speech,
+} from "@/src/assets/svgs";
 
 export const HeaderMenuItemsList = [
   { title: "Home", link: "/" },
@@ -28,4 +35,11 @@ export const servicesList = [
       "Conte conosco para uma vistoria abrangente que proporciona confiança e tranquilidade na entrega de sua obra",
     ],
   },
+];
+
+export const weGuaranteeList = [
+  { title: "EXPERTISE TÉCNICA", logo: LightBulb },
+  { title: "COMPROMETIMENTO COM A QUALIDADE", logo: Gear },
+  { title: "ANTECIPAÇÃO DE PROBLEMAS", logo: Problems },
+  { title: "TRANSPARÊNCIA E COMUNICAÇÃO", logo: Speech },
 ];

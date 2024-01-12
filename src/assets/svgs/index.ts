@@ -4,5 +4,16 @@ import HandShake from "./handshake.svg";
 import LightBulb from "./lightbulb.svg";
 import Search from "./search.svg";
 import MenuIcon from "./menu.svg";
+import Problems from "./problems.svg";
+import Speech from "./speech.svg";
 
-export { Gear, Check, HandShake, LightBulb, Search, MenuIcon };
+export {
+  Gear,
+  Check,
+  HandShake,
+  LightBulb,
+  Search,
+  MenuIcon,
+  Problems,
+  Speech,
+};

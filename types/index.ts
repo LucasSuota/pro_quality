@@ -3,3 +3,8 @@ export interface ServicesListType {
   title: string;
   description: any;
 }
+
+export interface WeGuaranteeCardType {
+  title: string;
+  logo: string;
+}

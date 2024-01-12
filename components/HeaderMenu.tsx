@@ -40,7 +40,7 @@ const HeaderMenu = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="absolute py-4 right-0 text-right bg-white w-full mt-2"
+            className="absolute z-40 py-4 right-0 text-right bg-white w-full mt-2"
           >
             {HeaderMenuItemsList.map((item, index) => (
               <Link href={item.link} key={index}>
