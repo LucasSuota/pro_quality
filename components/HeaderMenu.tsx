@@ -1,12 +1,11 @@
 "use client";
 
 import { HeaderMenuItemsList } from "@/constants";
-import { LogoBlack } from "@/src/assets/images";
 import { MenuIcon } from "@/src/assets/svgs";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const HeaderMenu = () => {
   const menuItemVariants = {

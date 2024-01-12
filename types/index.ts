@@ -1,7 +1,10 @@
 export interface ServicesListType {
   image: string;
   title: string;
-  description: any;
+  text1: string;
+  text2: string;
+  text3: string;
+  text4: string;
 }
 
 export interface WeGuaranteeCardType {

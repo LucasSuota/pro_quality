@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import QueroOrcamento from "./Buttons/QueroOrcamento";
+import Image from "next/image";
+import { LogoWhite } from "@/public/assets/images";
 
 const Hero = () => {
   useEffect(() => {

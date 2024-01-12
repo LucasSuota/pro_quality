@@ -11,14 +11,10 @@ const Services = () => {
             key={index}
             image={item.image}
             title={item.title}
-            description={item.text.map((text, textIndex) => (
-              <p
-                className="mt-1 sm:text-proSubTitles text-proSmSubTitles"
-                key={textIndex}
-              >
-                {text}
-              </p>
-            ))}
+            text1={item.text1}
+            text2={item.text2}
+            text3={item.text3}
+            text4={item.text4}
           />
         ))}
       </section>

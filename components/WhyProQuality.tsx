@@ -11,7 +11,7 @@ const WhyProQuality = () => {
         className="mt-10 sm:mx-20 mx-10"
         style={{ width: "50px", height: "2px", background: "#195973" }}
       />
-      <p className="mt-10 sm:mx-20 mx-10 text-start text-proSmSubTitles">
+      <p className="mt-10 sm:mx-20 mx-10 text-start sm:text-proSmTitles text-proSmSubTitles">
         Ao escolher a <b className="text-problue">Proquality Engenharia</b>,
         você está optando por um parceiro comprometido com a{" "}
         <b className="text-problue">excelência</b> e a{" "}
@@ -20,10 +20,10 @@ const WhyProQuality = () => {
         de pavimentação e construção civil, mas também se destaca na realização
         de vistorias de entrega de obras.
       </p>
-      <p className="mt-10 sm:mx-20 mx-10 text-start text-proSmSubTitles">
+      <p className="mt-10 sm:mx-20 mx-10 text-start sm:text-proSmTitles text-proSmSubTitles">
         Ao nos contratar, garantimos:
       </p>
-      <div className="mt-10">
+      <div className="sm:mx-20 mx-10 mt-10 flex flex-col sm:flex-row">
         {weGuaranteeList.map((item, index) => (
           <WeGuaranteCard key={index} title={item.title} logo={item.logo} />
         ))}
