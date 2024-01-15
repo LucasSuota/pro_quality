@@ -2,6 +2,7 @@ import {
   ActionButton,
   Header,
   Hero,
+  RealizedProjectsPreview,
   Services,
   WhyProQuality,
 } from "@/components";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Services />
       <WhyProQuality />
+      <RealizedProjectsPreview />
     </>
   );
 }

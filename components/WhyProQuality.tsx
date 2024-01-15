@@ -2,26 +2,25 @@
 
 import { weGuaranteeList } from "@/constants";
 import { WeGuaranteCard } from ".";
-import { motion } from "framer-motion";
+import { inView, motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const WhyProQuality = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
+  const ref = useRef(null);
+  const isInView = useInView(ref);
+  const controls = useAnimation();
+
+  const squareVariants = {
+    visible: { opacity: 1, scale: 4, transition: { duration: 1 } },
+    hidden: { opacity: 0, scale: 0 },
   };
 
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 },
-  };
+  useEffect(() => {
+    if (isInView) controls.start("visible");
+  }, [controls, inView]);
 
   return (
-    <motion.section
-      className="max-w-screen-lg mx-auto text-center mt-20 py-20 bg-progray"
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <motion.section className="max-w-screen-lg mx-auto text-center mt-20 py-20 bg-progray">
       <h2 className="w-[200px] mx-auto leading-7 font-proquality text-proTitles font-bold">
         POR QUE A PROQUALITY?
       </h2>
@@ -41,9 +40,18 @@ const WhyProQuality = () => {
       <p className="mt-10 sm:mx-20 mx-10 text-start sm:text-proSmTitles text-proSmSubTitles">
         Ao nos contratar, garantimos:
       </p>
-      <div className="sm:mx-20 mx-10 mt-10 flex flex-col sm:flex-row">
+      <div className="sm:mx-20 mx-10 mt-10 grid sm:grid-cols-2 grid-cols-1 sm:flex-row">
         {weGuaranteeList.map((item, index) => (
-          <motion.div key={index} variants={itemVariants}>
+          <motion.div
+            style={{
+              transform: isInView ? "none" : "translateY(-50px)",
+              opacity: isInView ? 1 : 0,
+              transition: "0.4s",
+            }}
+            variants={squareVariants}
+            ref={ref}
+            key={index}
+          >
             <WeGuaranteCard title={item.title} logo={item.logo} />
           </motion.div>
         ))}

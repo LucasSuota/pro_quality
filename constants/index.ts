@@ -1,3 +1,4 @@
+import { Projeto1, Projeto2 } from "@/src/assets/images/projetos";
 import {
   Search,
   Check,
@@ -46,4 +47,19 @@ export const weGuaranteeList = [
   { title: "COMPROMETIMENTO COM A QUALIDADE", logo: Gear },
   { title: "ANTECIPAÇÃO DE PROBLEMAS", logo: Problems },
   { title: "TRANSPARÊNCIA E COMUNICAÇÃO", logo: Speech },
+];
+
+export const projetosRealizadosPreview = [
+  {
+    title: "Serviço de sondagem a trado",
+    description:
+      "Realizado no dia xx/xx/xxxx na cidade de xx, cliente empresa xx",
+    image: Projeto2,
+  },
+  {
+    title: "Ensaio de deflexão viga benkelman",
+    description:
+      "Realizado no dia xx/xx/xxxx na cidade de xx, cliente empresa xx",
+    image: Projeto1,
+  },
 ];

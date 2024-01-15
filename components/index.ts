@@ -5,6 +5,7 @@ import Services from "./Services";
 import WeGuaranteCard from "./WeGuaranteCard";
 import WhyProQuality from "./WhyProQuality";
 import ActionButton from "./ActionButton";
+import RealizedProjectsPreview from "./RealizedProjectsPreview";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   WhyProQuality,
   WeGuaranteCard,
   ActionButton,
+  RealizedProjectsPreview,
 };
