@@ -20,7 +20,7 @@ const HeaderMenu = () => {
   };
 
   return (
-    <div>
+    <div className="absolute left-0">
       <div className="relative sm:w-[48px] sm:h-[48px] w-[32px] h-[32px]">
         <Image
           src={MenuIcon}
@@ -39,7 +39,7 @@ const HeaderMenu = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="absolute z-40 py-4 right-0 text-right bg-white w-full mt-2"
+            className="z-4 py-4 right-0 text-right bg-white min-w-screen mt-2"
           >
             {HeaderMenuItemsList.map((item, index) => (
               <Link href={item.link} key={index}>
