@@ -5,5 +5,15 @@ import LightBulb from "./lightbulb.svg";
 import Search from "./search.svg";
 import MenuIcon from "./menu.svg";
 import WhatsappIcon from "./whatsapp.svg";
+import Instagram from "./instagram.svg";
 
-export { Gear, Check, HandShake, LightBulb, Search, MenuIcon, WhatsappIcon };
+export {
+  Gear,
+  Check,
+  HandShake,
+  LightBulb,
+  Search,
+  MenuIcon,
+  WhatsappIcon,
+  Instagram,
+};
