@@ -39,12 +39,12 @@ const HeaderMenu = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: "-100%" }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className="absolute z-40 py-4 right-0 text-right bg-white w-full mt-2"
+            className="absolute z-40 py-4 right-0 text-right bg-white w-full sm:mt-2 md:mt-2 lg:mt-2 mt-3"
           >
             {HeaderMenuItemsList.map((item, index) => (
               <Link href={item.link} key={index}>
                 <motion.p
-                  className="font-proquality hover:text-problue active:text-problack text-5xl mt-1 mx-10"
+                  className="font-proquality hover:text-problue active:text-problack sm:text-5xl text-4xl mt-1 mx-10"
                   variants={menuItemVariants}
                   initial="hidden"
                   animate="visible"

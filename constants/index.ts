@@ -10,7 +10,7 @@ import {
 
 export const HeaderMenuItemsList = [
   { title: "Home", link: "/" },
-  { title: "Quem somos?", link: "/quem_somos" },
+  { title: "Quem somos", link: "/quem_somos" },
   { title: "Clientes", link: "/clientes" },
   { title: "Contato", link: "/contato" },
 ];
