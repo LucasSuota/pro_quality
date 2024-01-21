@@ -4,6 +4,7 @@ import { weGuaranteeList } from "@/constants";
 import { WeGuaranteCard } from ".";
 import { inView, motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import { HeroBg } from "@/public/assets/images";
 
 const WhyProQuality = () => {
   const ref = useRef(null);
@@ -40,7 +41,7 @@ const WhyProQuality = () => {
       <p className="mt-10 sm:mx-20 mx-10 text-start sm:text-proSmTitles text-proSmSubTitles">
         Ao nos contratar, garantimos:
       </p>
-      <div className="sm:mx-20 mx-10 mt-10 grid sm:grid-cols-2 grid-cols-1 sm:flex-row">
+      <div className="sm:mx-20 mx-10 mt-10 grid sm:grid-cols-2 grid-cols-1">
         {weGuaranteeList.map((item, index) => (
           <motion.div
             style={{

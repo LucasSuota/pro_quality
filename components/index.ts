@@ -6,6 +6,7 @@ import WeGuaranteCard from "./WeGuaranteCard";
 import WhyProQuality from "./WhyProQuality";
 import ActionButton from "./ActionButton";
 import RealizedProjectsPreview from "./RealizedProjectsPreview";
+import Footer from "./Footer";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   WeGuaranteCard,
   ActionButton,
   RealizedProjectsPreview,
+  Footer,
 };

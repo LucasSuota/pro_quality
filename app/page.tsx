@@ -1,5 +1,6 @@
 import {
   ActionButton,
+  Footer,
   Header,
   Hero,
   RealizedProjectsPreview,
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <WhyProQuality />
       <RealizedProjectsPreview />
+      <Footer />
     </>
   );
 }

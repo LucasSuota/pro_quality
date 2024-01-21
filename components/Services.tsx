@@ -3,7 +3,7 @@ import { servicesList } from "@/constants";
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center justify-center mt-12">
+    <section className="flex flex-col items-center justify-center mt-10">
       <h2 className="font-proquality font-bold text-proTitles">SERVIÇOS</h2>
       <section className="flex sm:flex-row flex-col sm:mx-40 px-10 gap-10 mt-12">
         {servicesList.map((item, index) => (
