@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-problack mx-auto mt-20 flex justify-center">
+    <footer className="w-full bg-problack mx-auto flex justify-center">
       <div className="max-w-screen-lg px-4 py-4 flex sm:flex-row flex-col sm:items-center items-start justify-center sm:gap-20 gap-4">
         <div className="flex flex-col gap-2">
           <Image

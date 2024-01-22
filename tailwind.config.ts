@@ -21,7 +21,7 @@ const config: Config = {
         subtitles: "26px",
         para: "20px",
         smtitles: "26px",
-        smsubtitles: "18px",
+        smsubtitles: "17px",
         smpara: "16px",
       },
     },

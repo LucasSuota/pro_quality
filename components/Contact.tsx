@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-lg mx-auto px-10 mt-10">
+      <div className="max-w-screen-lg mx-auto px-10 mt-10 mb-10">
         <p className="font-proquality text-problue text-proSmSubTitles sm:text-2xl font-bold">
           PROQUALITY ENGENHARIA
         </p>

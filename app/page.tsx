@@ -19,8 +19,8 @@ export default function Home() {
         <Header />
         <Hero />
         <Services />
-        <WhyProQuality />
         <RealizedProjectsPreview />
+        <WhyProQuality />
         <Footer />
       </Transition>
     </>

@@ -35,7 +35,7 @@ const Hero = () => {
           backgroundAttachment: "fixed",
         }}
       />
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full relative z-10">
+      <div className="max-w-screen-lg sm:px-5 mx-auto flex flex-col items-center justify-center h-full relative z-10">
         <div className="flex flex-col items-start justify-end h-3/5 sm:px-0 px-4">
           <Image
             className="mb-4"
