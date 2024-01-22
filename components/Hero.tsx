@@ -34,9 +34,16 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
-      ></div>
+      />
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full relative z-10">
         <div className="flex flex-col items-start justify-end h-3/5 sm:px-0 px-4">
+          <Image
+            className="mb-4"
+            src={LogoWhite}
+            width={150}
+            height={150}
+            alt="logo"
+          />
           <h1 className="sm:text-5xl text-4xl font-proquality text-white font-semibold">
             CONTROLE DE QUALIDADE E VISTORIA EM OBRAS
           </h1>

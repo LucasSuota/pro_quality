@@ -7,7 +7,7 @@ const WeGuaranteCard = ({ title, logo }: WeGuaranteeCardType) => {
       <div className="sm:w-full sm:min-h-[120px] min-w-[65px] min-h-[65px] hover:bg-problack transition-all bg-problue flex items-center justify-center">
         <Image src={logo} width={32} height={32} alt="Logo" />
       </div>
-      <h3 className="sm:max-w-[200px] sm:text-proSubTitles text-proSmTitles sm:text-proSmSubTitles font-bold text-problue text-left">
+      <h3 className="sm:max-w-[200px] sm:text-proSubTitles sm:text-para text-smpara font-bold text-problue text-left">
         {title}
       </h3>
     </section>

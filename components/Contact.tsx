@@ -5,17 +5,21 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <form>
-      <div className="max-w-screen-xl px-10 mt-4 mx-auto">
-        <h1 className="font-proquality text-[32px] font-bold">Contato</h1>
-        <p className="font-proquality text-[14px]">
+      <div className="max-w-screen-lg px-10 mt-4 mx-auto">
+        <h1 className="font-proquality sm:text-titles text-smtitles font-bold">
+          Contato
+        </h1>
+        <p className="font-proquality sm:text-para text-smpara">
           Entre em contato conosco para sanar dúvidas que você possa ter através
           do nosso email ou nossas redes sociais.
         </p>
       </div>
-      <div className="mt-10 max-w-screen-xl px-10 mx-auto">
-        <h2 className="font-proquality text-[22px] font-bold">Fale conosco</h2>
+      <div className="mt-10 max-w-screen-lg px-10 mx-auto">
+        <h2 className="font-proquality sm:text-subtitles text-smsubtitles font-bold">
+          Fale conosco
+        </h2>
       </div>
-      <div className="max-w-screen-xl flex flex-col sm:flex-row justify-between mx-auto">
+      <div className="max-w-screen-lg flex flex-col sm:flex-row justify-between mx-auto">
         <div className="w-full sm:w-3/5 max-w-screen-lg px-10 mt-4 mx-auto flex flex-col">
           <input
             className="bg-progray font-proquality text-black py-2 px-4 my-1"
@@ -45,13 +49,13 @@ const Contact = () => {
           <div>
             <p className="font-proquality">
               Email:{" "}
-              <span className="font-bold text-xl text-problue">
+              <span className="font-bold text-SmProSubTitles text-problue">
                 contato@proquality.com
               </span>
             </p>
             <p className="font-proquality">
               Telefone:{" "}
-              <span className="font-bold text-xl text-problue">
+              <span className="font-bold text-SmProSubTitles text-problue">
                 (41) 91234-5678
               </span>
             </p>
@@ -69,8 +73,8 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-10 mt-10">
-        <p className="font-proquality text-problue text-2xl font-bold">
+      <div className="max-w-screen-lg mx-auto px-10 mt-10">
+        <p className="font-proquality text-problue text-proSmSubTitles sm:text-2xl font-bold">
           PROQUALITY ENGENHARIA
         </p>
         <p className="font-proquality">

@@ -12,6 +12,7 @@ export const HeaderMenuItemsList = [
   { title: "Home", link: "/" },
   { title: "Quem somos", link: "/quem_somos" },
   { title: "Clientes", link: "/clientes" },
+  { title: "Serviços", link: "/servicos" },
   { title: "Contato", link: "/contato" },
 ];
 

@@ -1,11 +1,17 @@
-import { ActionButton, Header } from "@/components";
+"use client";
+
+import { ActionButton, Footer, Header, Presentation } from "@/components";
+import Transition from "@/components/Transition/Transition";
 
 export default function Home() {
   return (
     <>
-      <ActionButton />
-      <Header />
-      <p>quem somos</p>
+      <Transition>
+        <ActionButton />
+        <Header />
+        <Presentation />
+        <Footer />
+      </Transition>
     </>
   );
 }

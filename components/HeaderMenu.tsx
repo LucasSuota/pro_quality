@@ -1,7 +1,7 @@
 "use client";
 
 import { HeaderMenuItemsList } from "@/constants";
-import { MenuIcon } from "@/src/assets/svgs";
+import { Close, MenuIcon } from "@/src/assets/svgs";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -22,14 +22,25 @@ const HeaderMenu = () => {
   return (
     <div>
       <div className="relative sm:w-[48px] sm:h-[48px] w-[32px] h-[32px]">
-        <Image
-          src={MenuIcon}
-          width={48}
-          height={48}
-          alt="Menu Icon"
-          onClick={handleMenuOpen}
-          className="cursor-pointer"
-        />
+        {isOpen ? (
+          <Image
+            src={Close}
+            width={48}
+            height={48}
+            alt="Menu Icon"
+            onClick={handleMenuOpen}
+            className="cursor-pointer"
+          />
+        ) : (
+          <Image
+            src={MenuIcon}
+            width={48}
+            height={48}
+            alt="Menu Icon"
+            onClick={handleMenuOpen}
+            className="cursor-pointer"
+          />
+        )}
       </div>
 
       <AnimatePresence>
@@ -44,7 +55,7 @@ const HeaderMenu = () => {
             {HeaderMenuItemsList.map((item, index) => (
               <Link href={item.link} key={index}>
                 <motion.p
-                  className="font-proquality hover:text-problue active:text-problack sm:text-5xl text-4xl mt-1 mx-10"
+                  className="font-proquality hover:text-problue active:text-problack sm:text-5xl text-4xl mt-4 mx-10"
                   variants={menuItemVariants}
                   initial="hidden"
                   animate="visible"

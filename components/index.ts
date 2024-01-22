@@ -8,6 +8,7 @@ import ActionButton from "./ActionButton";
 import RealizedProjectsPreview from "./RealizedProjectsPreview";
 import Footer from "./Footer";
 import Contact from "./Contact";
+import Presentation from "./Presentation";
 
 export {
   Header,
@@ -20,4 +21,5 @@ export {
   RealizedProjectsPreview,
   Footer,
   Contact,
+  Presentation,
 };

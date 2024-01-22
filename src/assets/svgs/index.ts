@@ -8,6 +8,7 @@ import Problems from "./problems.svg";
 import Speech from "./speech.svg";
 import Instagram from "./instagram.svg";
 import Whatsapp from "./whatsappblue.svg";
+import Close from "./close.svg";
 
 export {
   Gear,
@@ -20,4 +21,5 @@ export {
   Speech,
   Instagram,
   Whatsapp,
+  Close,
 };
