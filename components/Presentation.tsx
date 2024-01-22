@@ -4,7 +4,7 @@ const Presentation = () => {
   return (
     <section className="w-full mx-auto h-screen">
       <div className="max-w-screen-lg mx-auto px-10 sm:px-0 pt-40 flex sm:flex-row flex-col gap-10">
-        <p className="text-7xl font-proquality font-bold">"</p>
+        <p className="text-7xl font-proquality font-bold">&quot;</p>
         <div className="sm:w-full">
           <h2 className="sm:text-titles text-smtitles font-proquality font-bold">
             Quem somos
@@ -29,7 +29,7 @@ const Presentation = () => {
             de qualidade em obras.
           </p>
         </div>
-        <p className="text-7xl font-proquality font-bold">"</p>
+        <p className="text-7xl font-proquality font-bold">&quot;</p>
       </div>
     </section>
   );
