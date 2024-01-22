@@ -1,3 +1,5 @@
+"use client";
+
 import {
   ActionButton,
   Footer,
@@ -7,17 +9,20 @@ import {
   Services,
   WhyProQuality,
 } from "@/components";
+import Transition from "@/components/Transition/Transition";
 
 export default function Home() {
   return (
     <>
-      <ActionButton />
-      <Header />
-      <Hero />
-      <Services />
-      <WhyProQuality />
-      <RealizedProjectsPreview />
-      <Footer />
+      <Transition>
+        <ActionButton />
+        <Header />
+        <Hero />
+        <Services />
+        <WhyProQuality />
+        <RealizedProjectsPreview />
+        <Footer />
+      </Transition>
     </>
   );
 }

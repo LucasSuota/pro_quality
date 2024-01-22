@@ -7,6 +7,7 @@ import WhyProQuality from "./WhyProQuality";
 import ActionButton from "./ActionButton";
 import RealizedProjectsPreview from "./RealizedProjectsPreview";
 import Footer from "./Footer";
+import Contact from "./Contact";
 
 export {
   Header,
@@ -18,4 +19,5 @@ export {
   ActionButton,
   RealizedProjectsPreview,
   Footer,
+  Contact,
 };
