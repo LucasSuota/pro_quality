@@ -16,7 +16,6 @@ export default function Home() {
         <ActionButton />
         <Header />
         <Presentation />
-
         <Footer />
       </Transition>
     </>
