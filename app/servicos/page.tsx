@@ -1,11 +1,11 @@
-import { ActionButton, Header } from "@/components";
+import { ActionButton, Header, AllServices } from "@/components";
 
 export default function Home() {
   return (
     <>
       <ActionButton />
       <Header />
-      <p>clientes</p>
+      <AllServices />
     </>
   );
 }

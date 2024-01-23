@@ -11,10 +11,20 @@ const RealizedProjectsPreview = () => {
       <div>
         {projetosRealizadosPreview.map((item, index) => (
           <div
-            className="mx-5 mb-10 flex sm:flex-row flex-col items-center gap-2"
+            className="mx-5 mb-10 flex sm:flex-row flex-col items-center gap-4"
             key={index}
           >
-            <Image src={item.image} sizes="(100vw - 2rem)" alt={item.title} />
+            <Image
+              style={{
+                objectFit: "cover",
+                objectPosition: "center",
+                width: "100%",
+                height: "400px",
+              }}
+              src={item.image}
+              alt={item.title}
+            />
+
             <div className="flex flex-col sm:items-start text-start">
               <h4 className="sm:text-proTitles sm:text-subtitles text-smsubtitles uppercase font-proquality font-bold">
                 {item.title}

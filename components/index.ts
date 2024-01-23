@@ -9,6 +9,7 @@ import RealizedProjectsPreview from "./RealizedProjectsPreview";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import Presentation from "./Presentation";
+import AllServices from "./AllServices";
 
 export {
   Header,
@@ -22,4 +23,5 @@ export {
   Footer,
   Contact,
   Presentation,
+  AllServices,
 };
