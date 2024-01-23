@@ -5,7 +5,7 @@ import Link from "next/link";
 const Contact = () => {
   return (
     <form>
-      <div className="max-w-screen-lg px-10 mt-4 mx-auto">
+      <div className="max-w-screen-lg px-5 mt-4 mx-auto">
         <h1 className="font-proquality sm:text-titles text-smtitles font-bold">
           Contato
         </h1>
@@ -14,13 +14,13 @@ const Contact = () => {
           do nosso email ou nossas redes sociais.
         </p>
       </div>
-      <div className="mt-10 max-w-screen-lg px-10 mx-auto">
+      <div className="mt-10 max-w-screen-lg px-5 mx-auto">
         <h2 className="font-proquality sm:text-subtitles text-smsubtitles font-bold">
           Fale conosco
         </h2>
       </div>
       <div className="max-w-screen-lg flex flex-col sm:flex-row justify-between mx-auto">
-        <div className="w-full sm:w-3/5 max-w-screen-lg px-10 mt-4 mx-auto flex flex-col">
+        <div className="w-full sm:w-3/5 max-w-screen-lg px-5 mt-4 mx-auto flex flex-col">
           <input
             className="bg-progray font-proquality text-black py-2 px-4 my-1"
             type="text"
@@ -45,7 +45,7 @@ const Contact = () => {
             ENVIAR MENSAGEM
           </button>
         </div>
-        <div className="w-full sm:w-2/5 max-w-screen-lg px-10 sm:mt-4 mt-10 mx-auto">
+        <div className="w-full sm:w-2/5 max-w-screen-lg px-5 sm:mt-4 mt-10 mx-auto">
           <div>
             <p className="font-proquality">
               Email:{" "}
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-lg mx-auto px-10 mt-10 mb-10">
+      <div className="max-w-screen-lg mx-auto px-5 mt-10 mb-10">
         <p className="font-proquality text-problue text-proSmSubTitles sm:text-2xl font-bold">
           PROQUALITY ENGENHARIA
         </p>

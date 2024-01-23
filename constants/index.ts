@@ -53,14 +53,15 @@ export const weGuaranteeList = [
 export const projetosRealizadosPreview = [
   {
     title: "Serviço de sondagem a trado",
-    description:
-      "Realizado no dia xx/xx/xxxx na cidade de xx, cliente empresa xx",
-    image: Projeto2,
+    date: "22/01/2024",
+    image: Projeto1,
+    place: "Contorno Leste - São José dos Pinhais",
+    client: "Terrinter topografia",
   },
   {
     title: "Ensaio de deflexão viga benkelman",
-    description:
-      "Realizado no dia xx/xx/xxxx na cidade de xx, cliente empresa xx",
-    image: Projeto1,
+    date: "19/12/2023",
+    image: Projeto2,
+    place: "Contorno Leste - São José dos Pinhais",
   },
 ];

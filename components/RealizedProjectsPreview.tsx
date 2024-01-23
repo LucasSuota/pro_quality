@@ -11,17 +11,25 @@ const RealizedProjectsPreview = () => {
       <div>
         {projetosRealizadosPreview.map((item, index) => (
           <div
-            className="mx-10 mb-10 flex sm:flex-row flex-col items-center gap-2"
+            className="mx-5 mb-10 flex sm:flex-row flex-col items-center gap-2"
             key={index}
           >
-            <Image src={item.image} width={300} height={250} alt={item.title} />
+            <Image src={item.image} sizes="(100vw - 2rem)" alt={item.title} />
             <div className="flex flex-col sm:items-start text-start">
               <h4 className="sm:text-proTitles sm:text-subtitles text-smsubtitles uppercase font-proquality font-bold">
                 {item.title}
               </h4>
               <p className="sm:text-para text-smpara uppercase font-proquality">
-                {item.description}
+                Realizado dia: {item.date}
               </p>
+              <p className="sm:text-para text-smpara uppercase font-proquality">
+                Cidade: {item.place}
+              </p>
+              {item.client && (
+                <p className="sm:text-para text-smpara uppercase font-proquality">
+                  Cliente: {item.client}
+                </p>
+              )}
               <VerMais />
             </div>
           </div>

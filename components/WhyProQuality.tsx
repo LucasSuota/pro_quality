@@ -21,10 +21,10 @@ const WhyProQuality = () => {
           POR QUE A PROQUALITY?
         </h2>
         <div
-          className="mt-10 sm:mx-20 mx-10"
+          className="mt-10 sm:mx-20 mx-5"
           style={{ width: "50px", height: "2px", background: "#195973" }}
         />
-        <p className="mt-10 sm:mx-20 mx-10 text-start sm:text-para text-smpara">
+        <p className="mt-10 sm:mx-20 mx-5 text-start sm:text-para text-smpara">
           Ao escolher a <b className="text-problue">Proquality Engenharia</b>,
           você está optando por um parceiro comprometido com a{" "}
           <b className="text-problue">excelência</b> e a{" "}
@@ -33,10 +33,10 @@ const WhyProQuality = () => {
           ensaios de pavimentação e construção civil, mas também se destaca na
           realização de vistorias de entrega de obras.
         </p>
-        <p className="mt-10 sm:mx-20 mx-10 text-start sm:text-para text-smpara">
+        <p className="mt-10 sm:mx-20 mx-5 text-start sm:text-para text-smpara">
           Ao nos contratar, garantimos:
         </p>
-        <div className="sm:mx-20 mx-10 mt-10 grid sm:grid-cols-2 grid-cols-1">
+        <div className="sm:mx-20 mx-10 mt-5 grid sm:grid-cols-2 grid-cols-1">
           {weGuaranteeList.map((item, index) => (
             <motion.div
               style={{
