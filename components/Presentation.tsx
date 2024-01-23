@@ -10,16 +10,12 @@ const Presentation = () => {
     const interval = setInterval(() => {
       animate(
         "span",
-        { backgroundColor: "#195973", color: "white" },
-        { duration: 1 }
+        { backgroundColor: "#195973", color: "#ffffff" },
+        { duration: 1 },
       );
 
       clearInterval(interval);
     }, 500);
-
-    return () => {
-      animate("span", { opacity: 1 });
-    };
   });
 
   return (
