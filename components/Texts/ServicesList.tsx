@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowDown, ArrowUp } from "@/public/assets/svgs";
 import { ServicesListType } from "@/types";
 import Image from "next/image";
 import { useState } from "react";
@@ -41,19 +42,25 @@ const ServicesList = ({
             </div>
           )}
           {isOpen ? (
-            <button
-              onClick={handleTextChange}
-              className="active:bg-white active:text-problue bg-problue text-white font-proquality px-6 py-1 text-center mt-2"
-            >
-              Ver menos
-            </button>
+            <div className="flex flex-row items-center justify-center">
+              <button
+                onClick={handleTextChange}
+                className="text-problue text-smpara font-proquality text-start"
+              >
+                Fechar
+              </button>
+              <Image src={ArrowUp} width={24} height={24} alt={"Fechar"} />
+            </div>
           ) : (
-            <button
-              onClick={handleTextChange}
-              className="active:bg-white active:text-problue bg-problue text-white font-proquality px-6 py-1 text-center mt-2"
-            >
-              Ver mais
-            </button>
+            <div className="flex flex-row items-center justify-center">
+              <button
+                onClick={handleTextChange}
+                className="text-problue text-smpara font-proquality text-start"
+              >
+                Abrir
+              </button>
+              <Image src={ArrowDown} width={24} height={24} alt={"Fechar"} />
+            </div>
           )}
         </div>
         <div className="sm:flex hidden">
