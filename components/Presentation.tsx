@@ -8,13 +8,16 @@ const Presentation = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      animate("span", {
-        backgroundColor: "#195973",
-        color: "#ffffff",
-        padding: "1px 1px",
-        duration: 1,
-        fontWeight: "bold",
-      });
+      animate(
+        "span",
+        {
+          backgroundColor: "#195973",
+          color: "#ffffff",
+          padding: "1px 1px",
+          fontWeight: "bold",
+        },
+        { duration: 1 },
+      );
 
       clearInterval(interval);
     }, 500);
