@@ -36,7 +36,7 @@ const WhyProQuality = () => {
         <p className="mt-10 sm:mx-20 mx-5 text-start sm:text-para text-smpara">
           Ao nos contratar, garantimos:
         </p>
-        <div className="sm:mx-20 mx-10 mt-5 grid sm:grid-cols-2 grid-cols-1">
+        <div className="px-4 sm:px-20 mt-10 ">
           {weGuaranteeList.map((item, index) => (
             <motion.div
               style={{

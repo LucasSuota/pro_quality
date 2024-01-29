@@ -10,6 +10,10 @@ import Footer from "./Footer";
 import Contact from "./Contact";
 import Presentation from "./Presentation";
 import AllServices from "./AllServices";
+import ContactAddress from "./ContactAddress";
+import ContactForm from "./ContactForm";
+import ContactSocialMedias from "./ContactSocialMedias";
+import ContactTitle from "./ContactTitle";
 
 export {
   Header,
@@ -24,4 +28,8 @@ export {
   Contact,
   Presentation,
   AllServices,
+  ContactAddress,
+  ContactForm,
+  ContactSocialMedias,
+  ContactTitle,
 };

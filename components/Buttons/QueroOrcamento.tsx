@@ -4,7 +4,7 @@ const QueroOrcamento = () => {
   return (
     <Link
       href={"/contato"}
-      className="sm:w-2/5 w-full hover:bg-problack hover:text-white bg-problue active:bg-progray active:text-problack mt-4 sm:w-1/4 w-3/4 py-2 text-center font-proquality text-lg font-light text-white"
+      className="sm:w-2/5 w-full px-4 py-2 hover:bg-problack hover:text-white bg-problue active:bg-progray active:text-problack text-center font-proquality text-lg font-light text-white sm:mt-4 mt-10"
     >
       QUERO ORÇAMENTO
     </Link>

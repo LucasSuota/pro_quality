@@ -24,7 +24,7 @@ const Services = () => {
         ))}
       </section>
       <Link href={"/servicos"}>
-        <button className="px-6 py-4 font-bold bg-problue text-white font-proquality text-smpara sm:text-para mt-20">
+        <button className="bg-problue hover:bg-problack px-6 py-3 text-white mt-20">
           VER TODOS OS SERVIÇOS
         </button>
       </Link>

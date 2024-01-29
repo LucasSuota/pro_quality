@@ -34,7 +34,9 @@ const ServicesList = ({
               <p className="my-2 sm:sm:text-para text-smpara">{text1}</p>
               <p className="my-2 sm:sm:text-para text-smpara">{text2}</p>
               <p className="my-2 sm:sm:text-para text-smpara">{text3}</p>
-              <p className="my-2 sm:sm:text-para text-smpara">{text4}</p>
+              <p className="my-2 sm:sm:text-para text-smpara text-problue font-bold">
+                {text4}
+              </p>
             </div>
           ) : (
             <div className="transition-all">
@@ -68,7 +70,9 @@ const ServicesList = ({
             <p className="my-2 sm:sm:text-para text-smpara">{text1}</p>
             <p className="my-2 sm:sm:text-para text-smpara">{text2}</p>
             <p className="my-2 sm:sm:text-para text-smpara">{text3}</p>
-            <p className="my-2 sm:sm:text-para text-smpara">{text4}</p>
+            <p className="my-2 sm:sm:text-para text-smpara text-problue font-bold">
+              {text4}
+            </p>
           </div>
         </div>
       </div>
