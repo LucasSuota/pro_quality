@@ -55,7 +55,7 @@ const HeaderMenu = () => {
             {HeaderMenuItemsList.map((item, index) => (
               <Link href={item.link} key={index}>
                 <motion.p
-                  className="font-proquality hover:text-problue active:text-problack sm:text-5xl text-2xl mt-6 mx-10 underline decoration-progray decoration-4 underline-offset-8"
+                  className="font-proquality hover:text-problue active:text-problack sm:text-5xl text-2xl mt-6 mx-10 "
                   variants={menuItemVariants}
                   initial="hidden"
                   animate="visible"
