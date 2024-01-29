@@ -96,10 +96,10 @@ const ServiceDetails: React.FC<ServiceDetailsProps> = ({ title, type }) => {
   );
 };
 
-const ServicesList: React.FC<ServicesListProps> = ({ services }) => {
+const ServicesList: React.FC<any> = ({ services }) => {
   return (
     <div className="max-w-3xl mx-auto">
-      {services.map((service, index) => (
+      {services.map((service: any, index: any) => (
         <ServiceDetails key={index} title={service.title} type={service.type} />
       ))}
     </div>
@@ -114,7 +114,10 @@ export default function Home() {
         <Header />
         <main className="flex-grow bg-white">
           <div className="py-8">
-            {/* <ServicesList services={weOfferServices} /> */}
+            <div className="container mx-auto px-4">
+              <h1 className="text-4xl font-bold mb-8">Our Services</h1>
+              <ServicesList services={weOfferServices} />
+            </div>
           </div>
         </main>
         <Footer />
