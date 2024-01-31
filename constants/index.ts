@@ -51,14 +51,14 @@ export const weGuaranteeList = [
 
 export const projetosRealizadosPreview = [
   {
-    title: "Serviço de sondagem a trado",
+    title: "Ensaio de deflexão viga benkelman",
     date: "22/01/2024",
     image: Projeto1,
     place: "Contorno Leste - São José dos Pinhais",
     client: "Terrinter topografia",
   },
   {
-    title: "Ensaio de deflexão viga benkelman",
+    title: "Serviço de sondagem a trado",
     date: "19/12/2023",
     image: Projeto2,
     place: "Contorno Leste - São José dos Pinhais",
@@ -141,31 +141,40 @@ export const weOfferServices = [
   },
   {
     title: "Serviços de Controle de Qualidade",
-    type: {
-      concreto: [
-        "Moldagem de corpos de prova de concreto",
-        "Ensaio de resistência a compresão",
-        "Slump test",
-        "Extração de corpos de prova com sonda rotativa",
-      ],
-      asfalto: [
-        "Extração de corpos de prova com sonda rotativa",
-        "Teor de betume",
-        "Taxa de ligantes",
-        "Grau de compactação",
-        "Deflexão viga benkelman",
-        "Granulometria",
-        "Compactação marshall",
-      ],
-      solosEAgregados: [
-        "Granulometria",
-        "Ensaio de proctor",
-        "Ensaio de CBR",
-        "Sondagem a trado",
-        "Ensaio de densidade IN SITU",
-        "Deflexão viga benkelman",
-        "Lamelaridade",
-      ],
+    items: {
+      primeiro: {
+        title: "concreto",
+        concreto: [
+          "Moldagem de corpos de prova de concreto",
+          "Ensaio de resistência a compresão",
+          "Slump test",
+          "Extração de corpos de prova com sonda rotativa",
+        ],
+      },
+      segundo: {
+        title: "asfalto",
+        asfalto: [
+          "Extração de corpos de prova com sonda rotativa",
+          "Teor de betume",
+          "Taxa de ligantes",
+          "Grau de compactação",
+          "Deflexão viga benkelman",
+          "Granulometria",
+          "Compactação marshall",
+        ],
+      },
+      terceiro: {
+        title: "Solos e Agregados",
+        solosEAgregados: [
+          "Granulometria",
+          "Ensaio de proctor",
+          "Ensaio de CBR",
+          "Sondagem a trado",
+          "Ensaio de densidade IN SITU",
+          "Deflexão viga benkelman",
+          "Lamelaridade",
+        ],
+      },
     },
   },
 ];

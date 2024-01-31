@@ -1,6 +1,8 @@
 "use client";
 
 import { SubmitHandler, useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 type FormValues = {
   name: string;
@@ -10,14 +12,51 @@ type FormValues = {
 };
 
 const ContactForm = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
   const { register, handleSubmit, formState } = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    console.log(data);
+    emailjs
+      .send(
+        "service_dm33xco",
+        "template_meu0l8s",
+        {
+          from_name: data.name,
+          from_email: data.email,
+          message: data.message,
+          telephone: data.telephone,
+        },
+        "yUkSRiur1yql8qP68"
+      )
+      .then(() => {
+        setIsOpen(true);
+        setTimeout(() => {
+          setIsOpen(false);
+        }, 3000);
+      })
+      .catch((error) => {
+        console.error("Email sending failed:", error);
+      });
   };
 
   return (
     <div className="max-w-screen-lg px-5 mx-auto mt-10">
+      {isOpen && (
+        <div className="fixed top-0 left-0 z-40 mt-10 w-full">
+          <div className="sm:w-1/4 w-3/4 mx-auto bg-problue text-white px-6 py-4 rounded shadow-lg">
+            <div className="flex justify-end">
+              <button
+                className="text-white close-btn text-2xl font-bold"
+                onClick={() => setIsOpen(false)}
+              >
+                &times;
+              </button>
+            </div>
+            <p>Seu email foi enviado com sucesso!</p>
+          </div>
+        </div>
+      )}
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-4">
           <label

@@ -12,7 +12,7 @@ const WhyProQuality = () => {
 
   useEffect(() => {
     if (isInView) controls.start("visible");
-  }, [controls, inView]);
+  }, [controls, isInView]);
 
   return (
     <section className="w-full bg-progray">

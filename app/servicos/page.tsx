@@ -40,7 +40,7 @@ const ServiceDetails: React.FC<ServiceDetailsProps> = ({ title, type }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="mb-8">
+    <div className="mb-8 font-proquality">
       <h2
         className="text-2xl font-bold mb-4 cursor-pointer"
         onClick={() => setExpanded(!expanded)}
