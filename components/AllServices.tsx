@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { projetosRealizadosPreview } from "@/constants";
-import VerMais from "./Buttons/QueroOrcamento copy";
+import VerMais from "./Buttons/DefualtButton";
 
 const AllServices = () => {
   return (

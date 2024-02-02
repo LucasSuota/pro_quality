@@ -178,3 +178,10 @@ export const weOfferServices = [
     },
   },
 ];
+
+export const footerItems = [
+  { title: "Home", link: "/" },
+  { title: "Serviços", link: "/servicos" },
+  { title: "Quem somos", link: "/quem_somos" },
+  { title: "Contato", link: "/contato" },
+];

@@ -1,7 +1,6 @@
 "use client";
 
 import {
-  ActionButton,
   Footer,
   Header,
   Hero,
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Transition>
-        <ActionButton />
         <Header />
         <Hero />
         <Services />

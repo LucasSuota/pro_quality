@@ -150,7 +150,7 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="bg-problue font-proquality text-white px-4 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300"
+          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300"
         >
           Enviar
         </button>

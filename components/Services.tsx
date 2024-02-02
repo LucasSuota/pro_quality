@@ -1,8 +1,6 @@
-"use client";
-
-import Link from "next/link";
 import ServicesList from "./Texts/ServicesList";
 import { servicesList } from "@/constants";
+import DefaultButton from "./Buttons/DefualtButton";
 
 const Services = () => {
   return (
@@ -23,11 +21,7 @@ const Services = () => {
           />
         ))}
       </section>
-      <Link href={"/servicos"}>
-        <button className="bg-problue hover:bg-problack px-6 py-3 text-white mt-20">
-          VER TODOS OS SERVIÇOS
-        </button>
-      </Link>
+      <DefaultButton title="Todos os serviços" link="/servicos" />
     </section>
   );
 };

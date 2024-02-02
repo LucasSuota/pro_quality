@@ -1,6 +1,6 @@
 import { projetosRealizadosPreview } from "@/constants";
 import Image from "next/image";
-import VerMais from "./Buttons/QueroOrcamento copy";
+import DefaultButton from "./Buttons/DefualtButton";
 
 const RealizedProjectsPreview = () => {
   return (
@@ -40,7 +40,7 @@ const RealizedProjectsPreview = () => {
                   Cliente: {item.client}
                 </p>
               )}
-              <VerMais />
+              <DefaultButton title="Ver mais" link="/servicos" />
             </div>
           </div>
         ))}

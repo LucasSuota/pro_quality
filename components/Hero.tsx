@@ -1,6 +1,6 @@
-import QueroOrcamento from "./Buttons/QueroOrcamento";
 import Image from "next/image";
 import { FullLogoWhite } from "@/public/assets/images";
+import DefaultButton from "./Buttons/DefualtButton";
 
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
           <h1 className="sm:text-4xl text-3xl font-proquality text-white font-semibold">
             LABORATÓRIO DE OBRAS, CONTROLE DE QUALIDADE E VISTORIA
           </h1>
-          <QueroOrcamento />
+          <DefaultButton title="Quero Orçamento" link="/contato" />
         </div>
       </div>
     </section>

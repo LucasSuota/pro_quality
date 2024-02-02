@@ -1,4 +1,5 @@
-import { Instagram, Whatsapp } from "@/src/assets/svgs";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -19,21 +20,15 @@ const ContactSocialMedias = () => {
         </p>
       </div>
       <div className="mt-10">
-        <p className="font-proquality sm:text-para text-smsubtitles mb-10">
+        <p className="font-proquality sm:text-para text-smsubtitles mb-4">
           Nossas redes sociais:
         </p>
-        <div className="flex flex-row gap-10 items-start mt-4">
-          <Link
-            href={"https://www.instagram.com/mf_orlowski"}
-            className="relative w-[48px] sm:w-[64px] h-[48px] sm:h-[64px] "
-          >
-            <Image src={Instagram} fill alt="Instagram" />
+        <div className="flex flex-row gap-10 items-start mt-2">
+          <Link href={"https://www.instagram.com/mf_orlowski"}>
+            <LinkedInIcon className=" w-[48px] sm:w-[82px] h-[48px] sm:h-[82px]  text-problue hover:text-problack" />
           </Link>
-          <Link
-            href={"https://wa.me/5541998865360"}
-            className="relative w-[48px] sm:w-[64px] h-[48px] sm:h-[64px]"
-          >
-            <Image src={Whatsapp} fill alt="Whatsapp" />
+          <Link href={"https://wa.me/5541998865360"}>
+            <WhatsAppIcon className=" w-[48px] sm:w-[82px] h-[48px] sm:h-[82px]  text-problue hover:text-problack" />
           </Link>
         </div>
       </div>
