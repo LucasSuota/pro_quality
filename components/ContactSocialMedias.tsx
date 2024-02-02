@@ -1,6 +1,5 @@
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 

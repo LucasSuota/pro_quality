@@ -4,7 +4,6 @@ import Hero from "./Hero";
 import Services from "./Services";
 import WeGuaranteCard from "./WeGuaranteCard";
 import WhyProQuality from "./WhyProQuality";
-import ActionButton from "./ActionButton";
 import RealizedProjectsPreview from "./RealizedProjectsPreview";
 import Footer from "./Footer";
 import Contact from "./Contact";
@@ -22,7 +21,6 @@ export {
   Services,
   WhyProQuality,
   WeGuaranteCard,
-  ActionButton,
   RealizedProjectsPreview,
   Footer,
   Contact,

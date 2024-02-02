@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { projetosRealizadosPreview } from "@/constants";
-import VerMais from "./Buttons/DefualtButton";
+import DefaultButton from "./Buttons/DefualtButton";
 
 const AllServices = () => {
   return (
@@ -36,7 +36,7 @@ const AllServices = () => {
                 Cliente: {item.client}
               </p>
             )}
-            <VerMais />
+            <DefaultButton title="Ver mais" link="/servicos" />
           </div>
         </div>
       ))}
