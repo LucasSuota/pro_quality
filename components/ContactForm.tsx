@@ -27,7 +27,7 @@ const ContactForm = () => {
           message: data.message,
           telephone: data.telephone,
         },
-        "yUkSRiur1yql8qP68"
+        "yUkSRiur1yql8qP68",
       )
       .then(() => {
         setIsOpen(true);
@@ -150,7 +150,8 @@ const ContactForm = () => {
 
         <button
           type="submit"
-          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300"
+          disabled={isOpen}
+          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300 disabled:bg-problack"
         >
           Enviar
         </button>
