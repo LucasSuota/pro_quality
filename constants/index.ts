@@ -1,4 +1,4 @@
-import { Projeto1, Projeto2 } from "@/src/assets/images/projetos";
+import { Projeto1, Projeto2, Projeto3 } from "@/src/assets/images/projetos";
 import {
   Search,
   Check,
@@ -62,6 +62,13 @@ export const projetosRealizadosPreview = [
     date: "19/12/2023",
     image: Projeto2,
     place: "Contorno Leste - São José dos Pinhais",
+  },
+  {
+    title: "Ensaio de densidade Insitu",
+    date: "22/01/2024",
+    image: Projeto3,
+    place: "Rua Dom Predo I - Contenda PR",
+    client: "AACS engenharia e empreendimentos",
   },
 ];
 
