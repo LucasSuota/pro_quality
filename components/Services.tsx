@@ -8,7 +8,7 @@ const Services = () => {
       <h2 className="font-proquality font-bold sm:text-titles text-smtitles">
         SERVIÇOS
       </h2>
-      <section className="flex md:flex-row sm:flex-col flex-col md:mx-10 px-5 gap-10 mt-12">
+      <section className="flex mb-10 md:flex-row sm:flex-col flex-col md:mx-10 px-5 gap-10 mt-12">
         {servicesList.map((item, index) => (
           <ServicesList
             key={index}

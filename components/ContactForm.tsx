@@ -151,7 +151,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isOpen}
-          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300 disabled:bg-problack"
+          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300 disabled:bg-problack transition-all"
         >
           Enviar
         </button>
