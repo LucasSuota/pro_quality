@@ -10,7 +10,7 @@ import Image from "next/image";
 const ServicosHero = () => {
   return (
     <div className="w-full h-screen bg-problack text-center flex items-center justify-center">
-      <Swiper
+      {/* <Swiper
         className="w-full h-3/4 flex items-center justify-center"
         spaceBetween={5}
         slidesPerView={1}
@@ -35,7 +35,7 @@ const ServicosHero = () => {
             <p className="text-white">{slide.title}</p>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
     </div>
   );
 };
