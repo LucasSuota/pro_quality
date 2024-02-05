@@ -7,7 +7,7 @@ import { footerItems } from "@/constants";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-problack mt-40">
+    <footer className="w-full bg-problack">
       <div className="max-w-screen-lg px-4 py-6 mx-auto flex flex-row items-center justify-center sm:gap-40 gap-4">
         <Link href={"/"}>
           <Image

@@ -1,23 +1,101 @@
-import { weOfferServices } from "@/constants";
+"use client";
 
-const ServicosPrestados = () => {
+import React from "react";
+import { Card, List, Typography } from "antd";
+
+const { Title, Text } = Typography;
+
+interface Service {
+  title: string;
+  description?: string;
+  types?: {
+    [key: string]: {
+      title: string;
+      description: string;
+      uses?: { title: string; description: string }[];
+      sum?: string;
+    };
+  };
+  uses?: { title: string; description: string }[];
+  sum?: string;
+  items?: {
+    [key: string]: {
+      title: string;
+      tests: string[];
+    };
+  };
+}
+
+interface ServicesProps {
+  services: Service[];
+}
+
+const Services: React.FC<ServicesProps> = ({ services }) => {
+  const renderService = (service: Service, index: number) => {
+    const { title, description, types, uses, sum } = service;
+
+    return (
+      <Card key={index} title={title}>
+        {description && <Text>{description}</Text>}
+        {types &&
+          Object.entries(types).map(([typeKey, typeValue], typeIndex) => (
+            <Card key={typeKey} title={typeValue.title} className="mb-4">
+              <Text>{typeValue.description}</Text>
+              {typeValue.uses && (
+                <List
+                  dataSource={typeValue.uses}
+                  renderItem={(use, useIndex) => (
+                    <List.Item key={useIndex}>
+                      <Text strong>{use.title}</Text>
+                      <Text>{use.description}</Text>
+                    </List.Item>
+                  )}
+                />
+              )}
+              {typeValue.sum && <Text>{typeValue.sum}</Text>}
+            </Card>
+          ))}
+        {uses && (
+          <List
+            dataSource={uses}
+            renderItem={(use, useIndex) => (
+              <List.Item key={useIndex}>
+                <Text strong>{use.title}</Text>
+                <Text>{use.description}</Text>
+              </List.Item>
+            )}
+          />
+        )}
+        {sum && <Text>{sum}</Text>}
+      </Card>
+    );
+  };
+
   return (
-    <nav className="w-full mx-auto bg-problue">
-      {weOfferServices.map((services, index) => (
-        <div key={index} className="text-white font-proquality">
-          <h1 key={index}>{services.title}</h1>
-          <h2>{services.type?.inspeçãoPredial.title}</h2>
-          <h3>{services.type?.inspeçãoPredial.description}</h3>
-
-          <h2>{services.type?.parecerTecnicoJudicial.title}</h2>
-          <h3>{services.type?.parecerTecnicoJudicial.description}</h3>
-          <h3>{services.type?.parecerTecnicoJudicial.goal}</h3>
-          <h2>{services.type?.recebimentoDeObras.title}</h2>
-          <h3>{services.type?.recebimentoDeObras.description}</h3>
-        </div>
-      ))}
-    </nav>
+    <div className="font-proquality">
+      {services.map((service, index) => {
+        if (service.items) {
+          const { title, items } = service;
+          return (
+            <Card key={index} title={title}>
+              {Object.entries(items).map(([itemKey, itemValue], itemIndex) => (
+                <Card key={itemKey} title={itemValue.title}>
+                  <List
+                    dataSource={itemValue.tests}
+                    renderItem={(test, testIndex) => (
+                      <List.Item key={testIndex}>{test}</List.Item>
+                    )}
+                  />
+                </Card>
+              ))}
+            </Card>
+          );
+        } else {
+          return renderService(service, index);
+        }
+      })}
+    </div>
   );
 };
 
-export default ServicosPrestados;
+export default Services;

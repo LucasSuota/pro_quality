@@ -34,7 +34,7 @@ const ServicosHero = () => {
                   alt={slide.title}
                 />
               </div>
-              <div className="sm:w-2/4 w-full h-full bg-white flex items-start justify-center flex-col px-10">
+              <div className="sm:w-2/4 w-full h-full bg-white flex items-start sm:justify-center justify-start sm:py-0 py-10 flex-col px-10">
                 <div className="text-problue text-start">
                   <h2 className="sm:text-5xl text-3xl font-bold">
                     {slide.title}
