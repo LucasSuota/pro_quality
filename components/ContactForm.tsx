@@ -69,7 +69,7 @@ const ContactForm = () => {
             type="text"
             id="name"
             {...register("name", { required: "Nome é necessário" })}
-            className={`w-full p-2 border ${
+            className={`w-full p-2 border-2 ${
               formState.errors.name ? "border-red-500" : "border-gray-300"
             }`}
           />
@@ -94,7 +94,7 @@ const ContactForm = () => {
               required: "Email é necessário",
               pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
             })}
-            className={`w-full p-2 border ${
+            className={`w-full p-2 border-2 ${
               formState.errors.email ? "border-red-500" : "border-gray-300"
             }`}
           />
@@ -116,7 +116,7 @@ const ContactForm = () => {
             type="tel"
             id="telephone"
             {...register("telephone", { required: "Telefone é necessário" })}
-            className={`w-full p-2 border ${
+            className={`w-full p-2 border-2 ${
               formState.errors.telephone ? "border-red-500" : "border-gray-300"
             }`}
           />
@@ -137,7 +137,7 @@ const ContactForm = () => {
           <textarea
             id="message"
             {...register("message", { required: "Mensagem é necessária" })}
-            className={`w-full p-2 border ${
+            className={`w-full p-2 border-2 ${
               formState.errors.message ? "border-red-500" : "border-gray-300"
             }`}
           />
@@ -151,7 +151,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isOpen}
-          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300 disabled:bg-problack"
+          className="bg-problue sm:text-para text-smpara font-proquality text-white px-10 py-2 hover:bg-problack focus:outline-none focus:ring focus:border-blue-300 disabled:bg-problack transition-all"
         >
           Enviar
         </button>
