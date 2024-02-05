@@ -3,8 +3,8 @@ import { weOfferServices } from "@/constants";
 const ServicosPrestados = () => {
   return (
     <nav className="max-w-screen-lg mx-auto">
-      {weOfferServices.map((servicos) => (
-        <h1>{servicos.title}</h1>
+      {weOfferServices.map((services, index) => (
+        <h1 key={index}>{services.title}</h1>
       ))}
     </nav>
   );
