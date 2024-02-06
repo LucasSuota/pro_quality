@@ -83,28 +83,31 @@ export const services = [
         uses: [
           {
             title: "Verificação de Conformidade",
-            description: "Garante execução conforme projeto e normas.",
+            description:
+              "Garantir que a obra foi executada conforme o projeto aprovado, normas técnicas e regulamentações locais.",
           },
           {
             title: "Identificação de Defeitos",
-            description: "Detecta defeitos antes do recebimento final.",
+            description:
+              "Detectar quaisquer defeitos, danos ou questões de qualidade que precisem ser corrigidos antes do recebimento final.",
           },
           {
             title: "Documentação",
             description:
-              "Registra visualmente o estado da obra para disputas futuras.",
+              "Registrar visualmente o estado atual da obra por meio de relatórios fotográficos e documentação escrita, o que é crucial para resolver disputas futuras.",
           },
           {
             title: "Recebimento Oficial",
-            description: "Formaliza aceitação da obra pelo proprietário.",
+            description:
+              "Formalizar a aceitação da obra pelo proprietário ou cliente, indicando que ela está pronta para uso e ocupação.",
           },
         ],
       },
       parecerTecnicoJudicial: {
         title: "Parecer Técnico Judicial",
         description:
-          "Documento técnico em processos judiciais relacionados a imóveis, fornecendo análise especializada.",
-        goal: "Fornece informações técnicas ao tribunal para decisões justas em casos legais envolvendo propriedades.",
+          "Um parecer técnico judicial de imóvel é um documento elaborado por um profissional qualificado, como um engenheiro ou arquiteto, que fornece uma análise técnica sobre questões relacionadas a um imóvel dentro do contexto de um processo judicial. Esse parecer pode abordar diversos aspectos, como avaliação de valor, condições estruturais, possíveis defeitos, conformidade com normas e regulamentos, entre outros.",
+        goal: "O objetivo desse parecer é fornecer informações técnicas e especializadas ao tribunal para ajudar na tomada de decisões relacionadas ao imóvel em questão. Pode ser solicitado em casos de disputas legais envolvendo propriedades, como ações de desapropriação, litígios imobiliários, danos estruturais, entre outros.",
         sum: "Desempenha papel crucial ao oferecer embasamento técnico para decisões informadas no sistema judiciário.",
       },
       inspecaoPredial: {
@@ -120,22 +123,22 @@ export const services = [
           {
             title: "Instalações",
             description:
-              "Verificação de instalações elétricas, hidráulicas e sanitárias.",
+              "Verificação das instalações elétricas, hidráulicas, sanitárias e de gás, buscando possíveis irregularidades ou desgastes.",
           },
           {
             title: "Acabamentos",
             description:
-              "Análise do estado de conservação de pisos, revestimentos, pinturas.",
+              "Análise do estado de conservação de pisos, revestimentos, pinturas e outros elementos estéticos.",
           },
           {
             title: "Segurança",
             description:
-              "Avaliação de condições de segurança contra incêndios e acessibilidade.",
+              "Avaliação das condições de segurança contra incêndios, acessibilidade, entre outros.",
           },
           {
             title: "Patologias",
             description:
-              "Avaliação de condições de segurança contra incêndios e acessibilidade.",
+              " Identificação de patologias, como infiltrações, fissuras, desgastes prematuros, entre outros problemas.",
           },
         ],
         sum: "Identifica problemas antes que se agravem, permitindo manutenções preventivas e atendendo normativas locais.",

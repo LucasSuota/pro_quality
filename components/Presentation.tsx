@@ -32,7 +32,7 @@ const Presentation = () => {
             nossos clientes.
           </p>
           <p className="text-smpara">
-            Na Proquality Engenharia, comprometimento, conhecimento técnico e
+            Na ProQuality Engenharia, comprometimento, conhecimento técnico e
             eficiência são os pilares que fundamentam nossa atuação,
             tornando-nos a escolha confiável para suas necessidades de controle
             de qualidade em obras.

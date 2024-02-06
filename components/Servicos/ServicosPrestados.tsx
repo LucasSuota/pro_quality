@@ -35,7 +35,7 @@ const Services: React.FC<ServicesProps> = ({ services }) => {
     const { title, description, types, uses, sum } = service;
 
     return (
-      <section className="mt-10">
+      <section className="sm:mt-10 mt-0">
         <h3 className="sm:text-titles text-smtitles bg-problue px-2 py-4 text-white text-center">
           Todos os serviços
         </h3>
