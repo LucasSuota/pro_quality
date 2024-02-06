@@ -1,14 +1,11 @@
 import Image from "next/image";
 import { CivilEngineer, FullLogoBlack } from "@/public/assets/images";
-import WhatsApp from "@mui/icons-material/WhatsApp";
-import DefaultButton from "./Buttons/DefualtButton";
-import Link from "next/link";
 
 const Presentation = () => {
   return (
     <section>
-      <div className="w-full mx-auto flex sm:flex-row flex-col sm:gap-10 gap-2 items-center sm:mb-0 mb-40">
-        <div className="relative sm:w-2/4 w-full px-10 sm:h-screen h-[500px]">
+      <div className="w-full mx-auto flex sm:flex-row flex-col sm:gap-10 gap-2 items-center sm:mb-0 mb-4">
+        <div className="relative sm:w-2/4 w-full px-10 sm:h-screen h-[300px]">
           <Image
             src={CivilEngineer}
             style={{ objectFit: "cover" }}
@@ -16,8 +13,9 @@ const Presentation = () => {
             alt="Logo"
           />
         </div>
-        <div className="sm:w-1/4 w-full sm:px-0 px-10 min-h-screen flex flex-col gap-4 items-start justify-center font-proquality">
-          <h3 className="sm:text-5xl text-smtitles sm:mt-20 leading-6 text-problue font-bold ">
+        <div className="sm:w-1/4 w-full sm:px-0 px-5 min-h-screen flex flex-col gap-4 items-start font-proquality">
+          <div className="w-[50px] h-[2px] bg-problue mt-10" />
+          <h3 className="sm:text-5xl text-smtitles sm:mt-20 mt-4 leading-6 text-problue font-bold ">
             PROQUALITY ENGENHARIA
           </h3>
           <p className="text-smpara">
