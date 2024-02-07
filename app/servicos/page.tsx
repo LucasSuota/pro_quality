@@ -12,7 +12,6 @@ const page = () => {
         <Header />
         <ServicosHero />
         <ServicosPrestados />
-
         <Footer />
       </Transition>
     </section>

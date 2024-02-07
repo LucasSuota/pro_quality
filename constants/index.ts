@@ -184,6 +184,18 @@ export const servicosDeVistoria = {
   },
 };
 
+export const projetoDePavimentação = {
+  title: "Projetos de Pavimentação",
+  description:
+    "Oferecemos serviços abrangentes de projetos de pavimentação, incluindo análise de solo, dimensionamento de materiais, desenhos técnicos, e supervisão de obras. Garantimos soluções eficientes e duradouras para atender às necessidades específicas de cada projeto, seguindo padrões de qualidade e normas técnicas vigentes. Contamos com uma equipe especializada para assegurar a execução precisa e segura de todos os aspectos do projeto de pavimentação.",
+  items: [
+    "Projeto Geométrico",
+    "Projeto de Drenagem",
+    "Projeto de Pavimentação",
+    "Projeto de Sinalização e Complementares",
+  ],
+};
+
 export const footerItems = [
   { title: "Home", link: "/" },
   { title: "Serviços", link: "/servicos" },

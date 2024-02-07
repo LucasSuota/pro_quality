@@ -4,7 +4,11 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { servicosDeControleDeQualidade, servicosDeVistoria } from "@/constants";
+import {
+  projetoDePavimentação,
+  servicosDeControleDeQualidade,
+  servicosDeVistoria,
+} from "@/constants";
 
 const ServicosPrestados = () => {
   return (
@@ -67,6 +71,33 @@ const ServicosPrestados = () => {
               </AccordionDetails>
             </Accordion>
           ))}
+        </div>
+      </div>
+      <div className="max-w-screen-lg text-center mx-auto">
+        <div className="text-left">
+          <h3 className="sm:text-subtitles font-bold text-problack text-para px-4 mt-10 mb-4">
+            {projetoDePavimentação.title}
+          </h3>
+
+          <Accordion defaultExpanded>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              {projetoDePavimentação.title}
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="px-2">
+                <p>{projetoDePavimentação.description}</p>
+                {projetoDePavimentação.items.map((item, index) => (
+                  <p className="mt-2 font-bold" key={index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </AccordionDetails>
+          </Accordion>
         </div>
       </div>
     </section>
