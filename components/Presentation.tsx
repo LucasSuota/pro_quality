@@ -4,7 +4,7 @@ import { CivilEngineer, FullLogoBlack } from "@/public/assets/images";
 const Presentation = () => {
   return (
     <section>
-      <div className="w-full mx-auto flex sm:flex-row flex-col sm:gap-10 gap-2 items-center sm:mb-0 mb-4">
+      <div className="w-full mx-auto flex sm:flex-row flex-col sm:gap-10 gap-2 items-center sm:mb-0 mb-20">
         <div className="relative sm:w-2/4 w-full px-10 sm:h-screen h-[300px]">
           <Image
             src={CivilEngineer}

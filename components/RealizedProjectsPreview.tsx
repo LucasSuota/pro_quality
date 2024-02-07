@@ -16,6 +16,8 @@ const RealizedProjectsPreview = () => {
             width: "100%",
             height: "400px",
           }}
+          width={1000}
+          height={100}
           src={projetosRealizadosPreview[0].image}
           alt={projetosRealizadosPreview[0].title}
         />
@@ -46,6 +48,8 @@ const RealizedProjectsPreview = () => {
             width: "100%",
             height: "400px",
           }}
+          width={1000}
+          height={100}
           src={projetosRealizadosPreview[1].image}
           alt={projetosRealizadosPreview[1].title}
         />

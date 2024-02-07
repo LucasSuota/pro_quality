@@ -25,7 +25,7 @@ const Hero = () => {
             alt="logo"
           />
           <h1 className="sm:text-4xl text-3xl font-proquality text-white font-semibold">
-            LABORATÓRIO DE OBRAS, CONTROLE DE QUALIDADE E VISTORIA
+            CONTROLE DE QUALIDADE, PROJETOS E VISTORIA
           </h1>
           <DefaultButton title="Quero Orçamento" link="/contato" />
         </div>

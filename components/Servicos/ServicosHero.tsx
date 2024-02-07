@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { projetosRealizadosPreview } from "@/constants";
 import Image from "next/image";
+import { projetosImagens } from "@/src/assets/images/projetos";
+import { FullLogoWhite } from "@/public/assets/images";
 
 const ServicosHero = () => {
   return (
@@ -17,36 +19,47 @@ const ServicosHero = () => {
           slidesPerView={2}
           navigation
           autoplay={{
-            delay: 2600,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Pagination, Navigation]}
         >
           {projetosRealizadosPreview.map((slide, index) => (
             <SwiperSlide className="font-proquality" key={index}>
-              <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center">
-                <div className="relative w-full h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4 bg-problack">
+              <div className="min-w-full sm:h-[700px] flex sm:flex-row flex-col items-center justify-center">
+                <div
+                  className="relative w-full h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4 bg-problack"
+                  style={{
+                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
+                  url('${slide.image}')`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
                   <div className="text-start text-white">
-                    <h3 className="z-40 text-3xl relative font-bold">
+                    <Image
+                      className="mb-4"
+                      src={FullLogoWhite}
+                      width={120}
+                      height={120}
+                      alt="logo"
+                    />
+                    <h3 className="z-40 sm:text-2xl text-smtitles leading-6 relative font-bold uppercase">
                       {slide.title}
                     </h3>
-                    <p className="z-40 sm:text-2xl text-lg relative">
-                      {slide.place}
+                    <p className="z-40 sm:text-2xl text-smpara relative">
+                      Cidade: {slide.place}
                     </p>
-                    <p className="z-40 sm:text-2xl text-lg relative">
-                      {slide.date}
+                    <p className="z-40 sm:text-2xl text-smpara relative">
+                      Data: {slide.date}
                     </p>
-                    <p className="z-40 sm:text-2xl text-lg relative">
-                      {slide.client}
-                    </p>
+                    {slide.client && (
+                      <p className="z-40 sm:text-2xl text-smpara relative">
+                        Cliente: {slide.client}
+                      </p>
+                    )}
                   </div>
-                  <Image
-                    src={slide.image}
-                    fill
-                    quality={100}
-                    className="object-cover w-full h-full opacity-50"
-                    alt={slide.title}
-                  />
                 </div>
               </div>
             </SwiperSlide>
@@ -60,36 +73,47 @@ const ServicosHero = () => {
           slidesPerView={1}
           navigation
           autoplay={{
-            delay: 2600,
+            delay: 3500,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Pagination, Navigation]}
         >
           {projetosRealizadosPreview.map((slide, index) => (
             <SwiperSlide className="font-proquality" key={index}>
-              <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center">
-                <div className="relative w-full h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4 bg-problack">
+              <div className="min-w-full h-[680px] flex sm:flex-row flex-col items-center justify-center">
+                <div
+                  className="relative w-full h-full flex flex-col justify-center sm:items-center items-start px-4"
+                  style={{
+                    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
+                    url('${slide.image}')`,
+                    backgroundPosition: "center",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
+                  }}
+                >
                   <div className="text-start text-white">
-                    <h3 className="z-40 sm:text-2xl text-xl relative font-bold">
+                    <Image
+                      className="mb-4"
+                      src={FullLogoWhite}
+                      width={120}
+                      height={120}
+                      alt="logo"
+                    />
+                    <h3 className="z-40 sm:text-2xl text-smtitles leading-6 relative font-bold uppercase">
                       {slide.title}
                     </h3>
-                    <p className="z-40 sm:text-2xl text-lg relative">
-                      {slide.place}
+                    <p className="z-40 sm:text-2xl text-smpara relative">
+                      Cidade: {slide.place}
                     </p>
-                    <p className="z-40 sm:text-2xl text-lg relative">
-                      {slide.date}
+                    <p className="z-40 sm:text-2xl text-smpara relative">
+                      Data: {slide.date}
                     </p>
-                    <p className="z-40 sm:text-2xl text-lg relative">
-                      {slide.client}
-                    </p>
+                    {slide.client && (
+                      <p className="z-40 sm:text-2xl text-smpara relative">
+                        Cliente: {slide.client}
+                      </p>
+                    )}
                   </div>
-                  <Image
-                    src={slide.image}
-                    fill
-                    quality={100}
-                    className="object-cover w-full h-full opacity-50"
-                    alt={slide.title}
-                  />
                 </div>
               </div>
             </SwiperSlide>

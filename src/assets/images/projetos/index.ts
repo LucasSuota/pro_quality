@@ -1,5 +1,14 @@
-import Projeto1 from "./ensaiodeflexao.jpeg";
-import Projeto2 from "./sondagematrado.jpeg";
-import Projeto3 from "./ensaiodensidade.jpeg";
-
-export { Projeto1, Projeto2, Projeto3 };
+export const projetosImagens = [
+  {
+    title: "Projeto Ensaio de Deflexão",
+    url: "/assets/images/projetos/ensaiodeflexao.jpeg",
+  },
+  {
+    title: "Projeto Sondagem a Trado",
+    url: "/assets/images/projetos/sondagematrado.jpeg",
+  },
+  {
+    title: "Ensaio Densidade",
+    url: "/assets/images/projetos/ensaiodensidade.jpeg",
+  },
+];

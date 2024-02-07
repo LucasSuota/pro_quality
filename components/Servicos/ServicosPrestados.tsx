@@ -1,108 +1,65 @@
 "use client";
 
-import React from "react";
-import { Card, List, Typography } from "antd";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { servicosDeControleDeQualidade, servicosDeVistoria } from "@/constants";
 
-const { Title, Text } = Typography;
-
-interface Service {
-  title: string;
-  description?: string;
-  types?: {
-    [key: string]: {
-      title: string;
-      description: string;
-      uses?: { title: string; description: string }[];
-      sum?: string;
-    };
-  };
-  uses?: { title: string; description: string }[];
-  sum?: string;
-  items?: {
-    [key: string]: {
-      title: string;
-      tests: string[];
-    };
-  };
-}
-
-interface ServicesProps {
-  services: Service[];
-}
-
-const Services: React.FC<ServicesProps> = ({ services }) => {
-  const renderService = (service: Service, index: number) => {
-    const { title, description, types, uses, sum } = service;
-
-    return (
-      <section className="sm:mt-10 mt-0">
-        <h3 className="sm:text-titles text-smtitles bg-problue px-2 py-4 text-white text-center">
-          Todos os serviços
-        </h3>
-        <div className="max-w-screen-lg mt-5">
-          <Card key={index} title={title}>
-            {description && <Text>{description}</Text>}
-            {types &&
-              Object.entries(types).map(([typeKey, typeValue], typeIndex) => (
-                <Card key={typeKey} title={typeValue.title} className="mb-4">
-                  <Text>{typeValue.description}</Text>
-                  {typeValue.uses && (
-                    <List
-                      dataSource={typeValue.uses}
-                      renderItem={(use, useIndex) => (
-                        <List.Item key={useIndex}>
-                          <Text strong>{use.title}</Text>
-                          <Text>{use.description}</Text>
-                        </List.Item>
-                      )}
-                    />
-                  )}
-                  {typeValue.sum && <Text>{typeValue.sum}</Text>}
-                </Card>
-              ))}
-            {uses && (
-              <List
-                dataSource={uses}
-                renderItem={(use, useIndex) => (
-                  <List.Item key={useIndex}>
-                    <Text strong>{use.title}</Text>
-                    <Text>{use.description}</Text>
-                  </List.Item>
-                )}
-              />
-            )}
-            {sum && <Text>{sum}</Text>}
-          </Card>
-        </div>
-      </section>
-    );
-  };
-
+const ServicosPrestados = () => {
   return (
-    <div className="font-proquality max-w-screen-lg mx-auto">
-      {services.map((service, index) => {
-        if (service.items) {
-          const { title, items } = service;
-          return (
-            <Card key={index} title={title}>
-              {Object.entries(items).map(([itemKey, itemValue], itemIndex) => (
-                <Card key={itemKey} title={itemValue.title}>
-                  <List
-                    dataSource={itemValue.tests}
-                    renderItem={(test, testIndex) => (
-                      <List.Item key={testIndex}>{test}</List.Item>
-                    )}
-                  />
-                </Card>
-              ))}
-            </Card>
-          );
-        } else {
-          return renderService(service, index);
-        }
-      })}
-    </div>
+    <section className="w-full mx-auto mb-40">
+      <div className="max-w-screen-lg text-center">
+        <h2 className="sm:text-titles text-smtitles font-proquality font-bold text-problue">
+          Serviços Integrados
+        </h2>
+        <div className="text-left">
+          <h3 className="sm:text-subtitles font-bold text-problack text-smsubtitles px-4 mt-10 mb-4">
+            {servicosDeControleDeQualidade.title}
+          </h3>
+          {Object.values(servicosDeControleDeQualidade.items).map(
+            (item, index) => (
+              <Accordion key={index}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1-content"
+                  id="panel1-header"
+                >
+                  {item.title}
+                </AccordionSummary>
+                {item.tests.map((test, index) => (
+                  <AccordionDetails key={index}>{test}</AccordionDetails>
+                ))}
+              </Accordion>
+            )
+          )}
+        </div>
+      </div>
+      <div className="max-w-screen-lg text-center">
+        <div className="text-left">
+          <h3 className="sm:text-subtitles font-bold text-problack text-smsubtitles px-4 mt-10 mb-4">
+            {servicosDeVistoria.title}
+          </h3>
+          {Object.values(servicosDeVistoria.types).map((item, index) => (
+            <Accordion key={index}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1-content"
+                id="panel1-header"
+              >
+                {item.title}
+              </AccordionSummary>
+              <AccordionDetails>
+                <div>
+                  <p>{item.description}</p>
+                </div>
+              </AccordionDetails>
+            </Accordion>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default Services;
+export default ServicosPrestados;
