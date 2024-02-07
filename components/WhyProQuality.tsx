@@ -17,7 +17,7 @@ const WhyProQuality = () => {
   return (
     <section className="w-full bg-progray">
       <motion.section className="max-w-screen-lg mx-auto text-center mt-20 py-20">
-        <h2 className="w-[200px] mx-auto leading-7 font-proquality sm:text-titles text-smtitles font-bold">
+        <h2 className="w-[200px] mx-auto leading-7 font-proquality sm:text-titles text-smtitles font-bold text-problue">
           POR QUE A PROQUALITY?
         </h2>
         <div

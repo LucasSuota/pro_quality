@@ -26,9 +26,9 @@ const ServicosHero = () => {
         >
           {projetosRealizadosPreview.map((slide, index) => (
             <SwiperSlide className="font-proquality" key={index}>
-              <div className="min-w-full sm:h-[700px] flex sm:flex-row flex-col items-center justify-center">
+              <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center">
                 <div
-                  className="relative w-full h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4 bg-problack"
+                  className="relative w-full h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4"
                   style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
                   url('${slide.image}')`,
@@ -80,7 +80,7 @@ const ServicosHero = () => {
         >
           {projetosRealizadosPreview.map((slide, index) => (
             <SwiperSlide className="font-proquality" key={index}>
-              <div className="min-w-full h-[680px] flex sm:flex-row flex-col items-center justify-center">
+              <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center">
                 <div
                   className="relative w-full h-full flex flex-col justify-center sm:items-center items-start px-4"
                   style={{

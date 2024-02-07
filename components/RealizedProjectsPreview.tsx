@@ -5,7 +5,7 @@ import DefaultButton from "./Buttons/DefualtButton";
 const RealizedProjectsPreview = () => {
   return (
     <section className="max-w-screen-lg mx-auto text-center">
-      <h3 className="w-2/4 mx-auto font-proquality sm:text-titles text-smtitles font-bold mt-20 mb-20">
+      <h3 className="w-2/4 mx-auto font-proquality sm:text-titles text-smtitles font-bold mt-20 mb-20 text-problue">
         SERVIÇOS REALIZADOS
       </h3>
       <div className="mx-5 mb-10 flex sm:flex-row flex-col items-center gap-4">
