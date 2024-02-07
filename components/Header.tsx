@@ -11,7 +11,7 @@ const Header = () => {
       <header className="w-full z-40 bg-white fixed">
         <div className="max-w-screen-lg mx-auto px-4 py-3 flex flex-row items-center justify-between">
           <Link href={"/"}>
-            <Image src={FullLogoBlack} width={100} height={100} alt="Logo" />
+            <Image src={FullLogoBlack} width={120} height={120} alt="Logo" />
           </Link>
           <HeaderMenu />
         </div>

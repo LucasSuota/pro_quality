@@ -12,6 +12,16 @@ const page = () => {
         <Header />
         <ServicosHero />
         <ServicosPrestados />
+        <div
+          className="w-full sm:h-[200px] h-[100px] flex items-center justify-center"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
+            url('/assets/images/civilengineer.jpg')`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundAttachment: "fixed",
+          }}
+        ></div>
         <Footer />
       </Transition>
     </section>
