@@ -42,7 +42,7 @@ const ServicosPrestados = () => {
           <h3 className="sm:text-subtitles font-bold text-problack text-para px-4 mt-10 mb-4">
             {servicosDeVistoria.title}
           </h3>
-          {Object.values(servicosDeVistoria.types).map((item, index) => (
+          {Object.values(servicosDeVistoria.types).map((item: any, index) => (
             <Accordion key={index} defaultExpanded>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -52,7 +52,18 @@ const ServicosPrestados = () => {
                 <p className="text-smsubtitles">{item.title}</p>
               </AccordionSummary>
               <AccordionDetails>
-                <p className="px-2 text-smpara">{item.description}</p>
+                <div>
+                  <p className="px-2 text-smpara">{item.description}</p>
+                  {item.uses && (
+                    <div className="px-2 mt-4">
+                      {item.uses.map((use: any, index: number) => (
+                        <p key={index}>
+                          <strong>{use.title}</strong>: {use.description}
+                        </p>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </AccordionDetails>
             </Accordion>
           ))}
