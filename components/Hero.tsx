@@ -6,11 +6,11 @@ const Hero = () => {
   return (
     <section className="min-w-full z-0 mx-auto h-[680px] relative overflow-hidden">
       <div
-        className="parallax-background absolute top-0 left-0 w-full h-full"
+        className="absolute top-0 left-0 w-full h-full"
         style={{
           backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
           url('/assets/images/herobg.png')`,
-          backgroundPosition: "center",
+          backgroundPositionX: "center",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
         }}
