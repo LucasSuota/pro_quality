@@ -14,7 +14,7 @@ const Services = () => {
         {servicesList.map((service, index) => (
           <Accordion
             key={index}
-            className="sm:w-2/3 w-full shadow-none"
+            className="sm:w-2/3 w-full shadow-none border-0"
             defaultExpanded
           >
             <AccordionSummary
