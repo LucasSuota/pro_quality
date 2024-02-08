@@ -57,19 +57,19 @@ export const weGuaranteeList = [
 export const projetosRealizadosPreview = [
   {
     title: "Ensaio de deflexão viga benkelman",
-    date: "22/01/2024",
+    date: "19/12/2023",
     image: projetosImagens[0].url,
     place: "Contorno Leste - São José dos Pinhais",
     client: "Terrinter topografia",
   },
   {
     title: "Serviço de sondagem a trado",
-    date: "19/12/2023",
+    date: "16/12/2023",
     image: projetosImagens[1].url,
     place: "Contorno Leste - São José dos Pinhais",
   },
   {
-    title: "Ensaio de densidade Insitu",
+    title: "Ensaio de densidade INSITU",
     date: "22/01/2024",
     image: projetosImagens[2].url,
     place: "Rua Dom Predo I - Contenda PR",

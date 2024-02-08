@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useState } from "react";
 
 const ServicesList = ({
-  image,
   title,
   text1,
   text2,
@@ -22,7 +21,6 @@ const ServicesList = ({
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="w-full flex flex-row items-center gap-4">
-        <Image src={image} width={48} height={48} alt={title} />
         <h3 className="sm:text-subtitles text-smsubtitles font-bold text-problue uppercase">
           {title}
         </h3>

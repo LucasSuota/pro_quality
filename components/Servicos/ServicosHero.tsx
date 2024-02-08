@@ -66,7 +66,7 @@ const ServicosHero = () => {
       </div>
       <div className="w-full text-center sm:hidden flex items-center justify-center">
         <Swiper
-          className="w-full h-screen flex items-center justify-center"
+          className="w-full h-[660px] flex items-center justify-center"
           spaceBetween={0}
           slidesPerView={1}
           navigation

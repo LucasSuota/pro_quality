@@ -6,9 +6,7 @@ const ContactAddress = () => {
       <p className="font-proquality text-problue text-proSmSubTitles sm:text-2xl font-bold">
         PROQUALITY ENGENHARIA
       </p>
-      <p className="font-proquality">
-        Rua José Mosson, 2486. Curitiba, Paraná, Brasil
-      </p>
+      <p className="font-proquality">CURITIBA, PARANÁ, BRASIL</p>
     </div>
   );
 };

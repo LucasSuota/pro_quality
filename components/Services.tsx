@@ -1,9 +1,8 @@
-import ServicesList from "./Texts/ServicesList";
-import { projetoDePavimentação, servicesList } from "@/constants";
+import { servicesList } from "@/constants";
 import DefaultButton from "./Buttons/DefualtButton";
-import { Gear } from "@/src/assets/svgs";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Image from "next/image";
 
 const Services = () => {
   return (
@@ -11,61 +10,42 @@ const Services = () => {
       <h2 className="font-proquality font-bold sm:text-titles text-smtitles text-problue">
         SERVIÇOS
       </h2>
-      <section className="flex md:flex-row mb-10 sm:flex-col flex-col md:mx-10 px-5 gap-10 mt-12">
-        {/* {servicesList.map((item, index) => (
-          <ServicesList
+      <section className="flex md:flex-row mb-10 items-start sm:flex-col flex-col md:mx-4 px-2 gap-10 mt-12">
+        {servicesList.map((service, index) => (
+          <Accordion
             key={index}
-            image={item.image}
-            title={item.title}
-            text1={item.text1}
-            text2={item.text2}
-            text3={item.text3}
-            text4={item.text4}
-          />
-        ))} */}
-
-        <Accordion defaultExpanded>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
+            className="sm:w-2/3 w-full shadow-none"
+            defaultExpanded
           >
-            {servicesList[0].title}
-          </AccordionSummary>
-          <AccordionDetails>
-            <p>{servicesList[0].text1}</p>
-            <p>{servicesList[0].text2}</p>
-            <p>{servicesList[0].text3}</p>
-            <p>{servicesList[0].text4}</p>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion defaultExpanded>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            {servicesList[1].title}
-          </AccordionSummary>
-          <AccordionDetails>
-            <p>{servicesList[1].text1}</p>
-            <p>{servicesList[1].text2}</p>
-            <p>{servicesList[1].text3}</p>
-            <p>{servicesList[1].text4}</p>
-          </AccordionDetails>
-        </Accordion>
-        <Accordion defaultExpanded>
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel1-content"
-            id="panel1-header"
-          >
-            {servicesList[2].title}
-          </AccordionSummary>
-          <AccordionDetails>
-            <p>{servicesList[2].text1}</p>
-          </AccordionDetails>
-        </Accordion>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={`panel${index}-content`}
+              id={`panel${index}-header`}
+            >
+              <div className="flex items-center gap-4">
+                {service.image && (
+                  <Image
+                    src={service.image}
+                    width={50}
+                    height={50}
+                    alt={service.title}
+                  />
+                )}
+                <h2 className="sm:text-smpara text-smsubtitles font-proquality text-problue font-bold">
+                  {service.title}
+                </h2>
+              </div>
+            </AccordionSummary>
+            <AccordionDetails>
+              <div className="font-proquality text-smpara">
+                <p className="mt-4">{service.text1}</p>
+                <p className="mt-4">{service.text2}</p>
+                <p className="mt-4">{service.text3}</p>
+                <p className="mt-4 text-problue font-bold">{service.text4}</p>
+              </div>
+            </AccordionDetails>
+          </Accordion>
+        ))}
       </section>
       <DefaultButton title="Todos os serviços" link="/servicos" />
     </section>
