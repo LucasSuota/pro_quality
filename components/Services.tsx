@@ -15,31 +15,41 @@ const Services = () => {
           <Accordion
             key={index}
             className="sm:w-2/3 w-full shadow-none border-0"
-            defaultExpanded
+            sx={{
+              boxShadow: "none",
+              border: "none",
+              "&:before": {
+                display: "none",
+              },
+            }}
           >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls={`panel${index}-content`}
               id={`panel${index}-header`}
             >
-              <div className="flex items-center gap-4">
-                {service.image && (
-                  <Image
-                    src={service.image}
-                    width={50}
-                    height={50}
-                    alt={service.title}
-                  />
-                )}
-                <h2 className="sm:text-smpara text-smsubtitles font-proquality text-problue font-bold">
-                  {service.title}
-                </h2>
+              <div>
+                <div className="flex items-center gap-4">
+                  {service.image && (
+                    <Image
+                      src={service.image}
+                      width={50}
+                      height={50}
+                      alt={service.title}
+                    />
+                  )}
+                  <h2 className="sm:text-smpara text-smsubtitles font-proquality text-problue font-bold">
+                    {service.title}
+                  </h2>
+                </div>
+                <div>
+                  <p className="mt-4 font-proquality">{service.text1}</p>
+                </div>
               </div>
             </AccordionSummary>
             <AccordionDetails>
               <div className="font-proquality text-smpara">
-                <p className="mt-4">{service.text1}</p>
-                <p className="mt-4">{service.text2}</p>
+                <p className="mt-0">{service.text2}</p>
                 <p className="mt-4">{service.text3}</p>
                 <p className="mt-4 text-problue font-bold">{service.text4}</p>
               </div>
