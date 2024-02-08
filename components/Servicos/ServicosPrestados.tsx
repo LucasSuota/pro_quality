@@ -60,9 +60,9 @@ const ServicosPrestados = () => {
       <div className="max-w-screen-lg text-center mx-auto">
         <div className="text-left mt-10">
           <div className="flex items-center justify-start gap-4 flex-row p-4">
-            <Image src={Search} width={30} height={30} alt="check" />
+            <Image src={Pavimentação} width={30} height={30} alt="check" />
             <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
-              {servicosDeControleDeQualidade.title}
+              {projetoDePavimentação.title}
             </h3>
           </div>
 
@@ -97,9 +97,9 @@ const ServicosPrestados = () => {
       <div className="max-w-screen-lg text-center mx-auto">
         <div className="text-left mt-10">
           <div className="flex items-center justify-start gap-4 flex-row p-4">
-            <Image src={Pavimentação} width={30} height={30} alt="check" />
+            <Image src={Search} width={30} height={30} alt="check" />
             <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
-              {servicosDeControleDeQualidade.title}
+              {servicosDeVistoria.title}
             </h3>
           </div>
           {Object.values(servicosDeVistoria.types).map((item: any, index) => (
