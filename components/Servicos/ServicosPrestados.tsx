@@ -23,7 +23,17 @@ const ServicosPrestados = () => {
           </h3>
           {Object.values(servicosDeControleDeQualidade.items).map(
             (item, index) => (
-              <Accordion key={index} defaultExpanded>
+              <Accordion
+                key={index}
+                defaultExpanded
+                sx={{
+                  boxShadow: "none",
+                  border: "none",
+                  "&:before": {
+                    display: "none",
+                  },
+                }}
+              >
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1-content"
@@ -47,7 +57,17 @@ const ServicosPrestados = () => {
             {servicosDeVistoria.title}
           </h3>
           {Object.values(servicosDeVistoria.types).map((item: any, index) => (
-            <Accordion key={index} defaultExpanded>
+            <Accordion
+              key={index}
+              defaultExpanded
+              sx={{
+                boxShadow: "none",
+                border: "none",
+                "&:before": {
+                  display: "none",
+                },
+              }}
+            >
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1-content"
@@ -79,7 +99,16 @@ const ServicosPrestados = () => {
             {projetoDePavimentação.title}
           </h3>
 
-          <Accordion defaultExpanded>
+          <Accordion
+            defaultExpanded
+            sx={{
+              boxShadow: "none",
+              border: "none",
+              "&:before": {
+                display: "none",
+              },
+            }}
+          >
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1-content"

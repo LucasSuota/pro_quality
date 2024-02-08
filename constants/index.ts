@@ -6,6 +6,7 @@ import {
   Gear,
   Problems,
   Speech,
+  Pavimentação,
 } from "@/src/assets/svgs";
 
 export const HeaderMenuItemsList = [
@@ -42,6 +43,7 @@ export const servicesList = [
   },
   {
     title: "PROJETOS DE PAVIMENTAÇÃO",
+    image: Pavimentação,
     text1:
       "Oferecemos serviços abrangentes de projetos de pavimentação, incluindo análise de solo, dimensionamento de materiais, desenhos técnicos, e supervisão de obras.",
     text2:

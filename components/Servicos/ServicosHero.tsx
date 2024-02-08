@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { projetosRealizadosPreview } from "@/constants";
 import Image from "next/image";
-import { projetosImagens } from "@/src/assets/images/projetos";
+
 import { FullLogoWhite } from "@/public/assets/images";
 
 const ServicosHero = () => {

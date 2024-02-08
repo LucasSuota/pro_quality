@@ -9,6 +9,7 @@ import Speech from "./speech.svg";
 import Instagram from "./instagram.svg";
 import Whatsapp from "./whatsappblue.svg";
 import Close from "./close.svg";
+import Pavimentação from "./projetosdepavimentacao.svg";
 
 export {
   Gear,
@@ -22,4 +23,5 @@ export {
   Instagram,
   Whatsapp,
   Close,
+  Pavimentação,
 };
