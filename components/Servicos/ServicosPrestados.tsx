@@ -9,6 +9,8 @@ import {
   servicosDeControleDeQualidade,
   servicosDeVistoria,
 } from "@/constants";
+import Image from "next/image";
+import { Check, Pavimentação, Search } from "@/src/assets/svgs";
 
 const ServicosPrestados = () => {
   return (
@@ -17,15 +19,18 @@ const ServicosPrestados = () => {
         <h2 className="sm:text-titles text-smtitles font-proquality font-bold text-problue">
           SERVIÇOS INTEGRADOS
         </h2>
-        <div className="text-left">
-          <h3 className="sm:text-subtitles font-bold text-problack text-para px-4 mt-10 mb-4">
-            {servicosDeControleDeQualidade.title}
-          </h3>
+        <div className="mt-10">
+          <div className="flex items-center justify-start gap-4 flex-row p-4">
+            <Image src={Check} width={30} height={30} alt="check" />
+            <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
+              {servicosDeControleDeQualidade.title}
+            </h3>
+          </div>
           {Object.values(servicosDeControleDeQualidade.items).map(
             (item, index) => (
               <Accordion
+                className="text-left"
                 key={index}
-                defaultExpanded
                 sx={{
                   boxShadow: "none",
                   border: "none",
@@ -53,13 +58,15 @@ const ServicosPrestados = () => {
       </div>
 
       <div className="max-w-screen-lg text-center mx-auto">
-        <div className="text-left">
-          <h3 className="sm:text-subtitles font-bold text-problack text-para px-4 mt-10 mb-4">
-            {projetoDePavimentação.title}
-          </h3>
+        <div className="text-left mt-10">
+          <div className="flex items-center justify-start gap-4 flex-row p-4">
+            <Image src={Search} width={30} height={30} alt="check" />
+            <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
+              {servicosDeControleDeQualidade.title}
+            </h3>
+          </div>
 
           <Accordion
-            defaultExpanded
             sx={{
               boxShadow: "none",
               border: "none",
@@ -77,7 +84,6 @@ const ServicosPrestados = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="px-2">
-                {/* <p>{projetoDePavimentação.description}</p> */}
                 {projetoDePavimentação.items.map((item, index) => (
                   <p className="mt-2 font-bold" key={index}>
                     {item}
@@ -89,14 +95,16 @@ const ServicosPrestados = () => {
         </div>
       </div>
       <div className="max-w-screen-lg text-center mx-auto">
-        <div className="text-left">
-          <h3 className="sm:text-subtitles font-bold text-problack text-para px-4 mt-10 mb-4">
-            {servicosDeVistoria.title}
-          </h3>
+        <div className="text-left mt-10">
+          <div className="flex items-center justify-start gap-4 flex-row p-4">
+            <Image src={Pavimentação} width={30} height={30} alt="check" />
+            <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
+              {servicosDeControleDeQualidade.title}
+            </h3>
+          </div>
           {Object.values(servicosDeVistoria.types).map((item: any, index) => (
             <Accordion
               key={index}
-              defaultExpanded
               sx={{
                 boxShadow: "none",
                 border: "none",
