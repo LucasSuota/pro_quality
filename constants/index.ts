@@ -30,6 +30,14 @@ export const servicesList = [
       "Conte conosco para assegurar a integridade e qualidade em cada etapa de sua obra.",
   },
   {
+    title: "PROJETOS DE PAVIMENTAÇÃO",
+    image: Pavimentação,
+    text1:
+      "Oferecemos serviços abrangentes de projetos de pavimentação, incluindo análise de solo, dimensionamento de materiais, desenhos técnicos, e supervisão de obras.",
+    text2:
+      " Garantimos soluções eficientes e duradouras para atender às necessidades específicas de cada projeto, seguindo padrões de qualidade e normas técnicas vigentes. Contamos com uma equipe especializada para assegurar a execução precisa e segura de todos os aspectos do projeto de pavimentação.",
+  },
+  {
     title: "VISTORIA EM OBRAS",
     image: Search,
     text1:
@@ -40,14 +48,6 @@ export const servicesList = [
       "Com expertise em identificar potenciais problemas antes da entrega, asseguramos que seu empreendimento seja entregue com qualidade superior.",
     text4:
       "Conte conosco para assegurar a integridade e qualidade em cada etapa de sua obra.",
-  },
-  {
-    title: "PROJETOS DE PAVIMENTAÇÃO",
-    image: Pavimentação,
-    text1:
-      "Oferecemos serviços abrangentes de projetos de pavimentação, incluindo análise de solo, dimensionamento de materiais, desenhos técnicos, e supervisão de obras.",
-    text2:
-      " Garantimos soluções eficientes e duradouras para atender às necessidades específicas de cada projeto, seguindo padrões de qualidade e normas técnicas vigentes. Contamos com uma equipe especializada para assegurar a execução precisa e segura de todos os aspectos do projeto de pavimentação.",
   },
 ];
 

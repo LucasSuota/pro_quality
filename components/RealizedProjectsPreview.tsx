@@ -23,17 +23,17 @@ const RealizedProjectsPreview = () => {
         />
 
         <div className="flex flex-col sm:items-start text-start">
-          <h4 className="sm:text-proTitles sm:text-subtitles text-smsubtitles uppercase font-proquality font-bold">
+          <h4 className="sm:text-proTitles sm:text-smsubtitles text-smsubtitles uppercase font-proquality font-bold">
             {projetosRealizadosPreview[0].title}
           </h4>
-          <p className="sm:text-para text-smpara uppercase font-proquality">
+          <p className="text-smpara uppercase font-proquality">
             Realizado dia: {projetosRealizadosPreview[0].date}
           </p>
-          <p className="sm:text-para text-smpara uppercase font-proquality">
+          <p className="text-smpara uppercase font-proquality">
             Cidade: {projetosRealizadosPreview[0].place}
           </p>
           {projetosRealizadosPreview[0].client && (
-            <p className="sm:text-para text-smpara uppercase font-proquality">
+            <p className="text-smpara uppercase font-proquality">
               Cliente: {projetosRealizadosPreview[0].client}
             </p>
           )}
@@ -55,17 +55,17 @@ const RealizedProjectsPreview = () => {
         />
 
         <div className="flex flex-col sm:items-start text-start">
-          <h4 className="sm:text-proTitles sm:text-subtitles text-smsubtitles uppercase font-proquality font-bold">
+          <h4 className="sm:text-smsubtitles uppercase font-proquality font-bold">
             {projetosRealizadosPreview[1].title}
           </h4>
-          <p className="sm:text-para text-smpara uppercase font-proquality">
+          <p className="text-smpara uppercase font-proquality">
             Realizado dia: {projetosRealizadosPreview[1].date}
           </p>
-          <p className="sm:text-para text-smpara uppercase font-proquality">
+          <p className="text-smpara uppercase font-proquality">
             Cidade: {projetosRealizadosPreview[1].place}
           </p>
           {projetosRealizadosPreview[1].client && (
-            <p className="sm:text-para text-smpara uppercase font-proquality">
+            <p className="text-smpara uppercase font-proquality">
               Cliente: {projetosRealizadosPreview[1].client}
             </p>
           )}

@@ -7,19 +7,19 @@ const ContactSocialMedias = () => {
   return (
     <div className="w-full max-w-screen-lg px-5 mt-10 mx-auto">
       <div>
-        <p className="font-proquality sm:text-para text-smsubtitles">
+        <p className="font-proquality sm:text-smpara text-smsubtitles">
           Email:{" "}
           <span className="font-bold text-problue">
             contato@proqualityengenharia.com
           </span>
         </p>
-        <p className="font-proquality sm:text-para text-smsubtitles">
+        <p className="font-proquality sm:text-smpara text-smsubtitles">
           Telefone:{" "}
           <span className="font-bold text-problue">(41) 99886-5360</span>
         </p>
       </div>
       <div className="mt-10">
-        <p className="font-proquality sm:text-para text-smsubtitles mb-4">
+        <p className="font-proquality sm:text-smpara text-smsubtitles mb-4">
           Nossas redes sociais:
         </p>
         <div className="flex flex-row gap-10 items-start mt-2">
