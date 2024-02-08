@@ -40,6 +40,11 @@ export const servicesList = [
     text4:
       "Conte conosco para assegurar a integridade e qualidade em cada etapa de sua obra.",
   },
+  {
+    title: "PROJETOS DE PAVIMENTAÇÃO",
+    text1:
+      "Oferecemos serviços abrangentes de projetos de pavimentação, incluindo análise de solo, dimensionamento de materiais, desenhos técnicos, e supervisão de obras. Garantimos soluções eficientes e duradouras para atender às necessidades específicas de cada projeto, seguindo padrões de qualidade e normas técnicas vigentes. Contamos com uma equipe especializada para assegurar a execução precisa e segura de todos os aspectos do projeto de pavimentação.",
+  },
 ];
 
 export const weGuaranteeList = [

@@ -15,7 +15,7 @@ const ServicosPrestados = () => {
     <section className="w-full mx-auto mb-40 mt-10 font-proquality">
       <div className="max-w-screen-lg text-center mx-auto">
         <h2 className="sm:text-titles text-smtitles font-proquality font-bold text-problue">
-          Serviços Integrados
+          SERVIÇOS INTEGRADOS
         </h2>
         <div className="text-left">
           <h3 className="sm:text-subtitles font-bold text-problack text-para px-4 mt-10 mb-4">
@@ -89,7 +89,7 @@ const ServicosPrestados = () => {
             </AccordionSummary>
             <AccordionDetails>
               <div className="px-2">
-                <p>{projetoDePavimentação.description}</p>
+                {/* <p>{projetoDePavimentação.description}</p> */}
                 {projetoDePavimentação.items.map((item, index) => (
                   <p className="mt-2 font-bold" key={index}>
                     {item}
