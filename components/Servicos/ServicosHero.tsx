@@ -4,10 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { projetosRealizadosPreview } from "@/constants";
+import { realizedProjects } from "@/constants";
 import Image from "next/image";
 
-import { FullLogoWhite } from "@/public/assets/images";
+import { FullLogoBlack, FullLogoWhite } from "@/public/assets/images";
+import { FullLogoBlue } from "@/public/assets/svgs";
 
 const ServicosHero = () => {
   return (
@@ -16,7 +17,7 @@ const ServicosHero = () => {
         <Swiper
           className="w-full h-screen flex items-center justify-center"
           spaceBetween={0}
-          slidesPerView={2}
+          slidesPerView={1}
           navigation
           autoplay={{
             delay: 3500,
@@ -24,40 +25,40 @@ const ServicosHero = () => {
           }}
           modules={[Autoplay, Pagination, Navigation]}
         >
-          {projetosRealizadosPreview.map((slide, index) => (
+          {realizedProjects.map((slide, index) => (
             <SwiperSlide className="font-proquality" key={index}>
-              <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center">
+              <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center gap-4 bg-progray">
                 <div
-                  className="relative w-full  h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4"
+                  className="relative w-3/5 h-full flex flex-col justify-end sm:items-center items-start pb-60 px-4"
                   style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
                   url('${slide.image}')`,
                     backgroundSize: "cover",
+                    backgroundPosition: "center",
                   }}
-                >
-                  <div className="text-start text-white">
-                    <Image
-                      className="mb-4"
-                      src={FullLogoWhite}
-                      width={120}
-                      height={120}
-                      alt="logo"
-                    />
-                    <h3 className="z-40 sm:text-2xl text-smtitles leading-6 relative font-bold uppercase">
-                      {slide.title}
-                    </h3>
-                    <p className="z-40 sm:text-2xl text-smpara relative">
-                      Cidade: {slide.place}
+                />
+                <div className="w-2/5 flex flex-col text-start">
+                  <h3 className="z-40 sm:text-smtitles text-smtitles leading-6 relative font-bold uppercase text-problue">
+                    {slide.title}
+                  </h3>
+                  <p className="z-40 sm:text-smbubtitles text-smpara relative">
+                    Cidade: {slide.place}
+                  </p>
+                  <p className="z-40 sm:text-smbubtitles text-smpara relative">
+                    Data: {slide.date}
+                  </p>
+                  {slide.client && (
+                    <p className="z-40 sm:text-smbubtitles text-smpara relative">
+                      Cliente: {slide.client}
                     </p>
-                    <p className="z-40 sm:text-2xl text-smpara relative">
-                      Data: {slide.date}
-                    </p>
-                    {slide.client && (
-                      <p className="z-40 sm:text-2xl text-smpara relative">
-                        Cliente: {slide.client}
-                      </p>
-                    )}
-                  </div>
+                  )}
+                  <Image
+                    className="mt-4"
+                    src={FullLogoBlue}
+                    width={140}
+                    height={140}
+                    alt="logo"
+                  />
                 </div>
               </div>
             </SwiperSlide>
@@ -76,11 +77,11 @@ const ServicosHero = () => {
           }}
           modules={[Autoplay, Pagination, Navigation]}
         >
-          {projetosRealizadosPreview.map((slide, index) => (
+          {realizedProjects.map((slide, index) => (
             <SwiperSlide className="font-proquality" key={index}>
               <div className="min-w-full h-full flex sm:flex-row flex-col items-center justify-center">
                 <div
-                  className="relative w-full h-full flex flex-col justify-center sm:items-center items-start px-4"
+                  className="relative w-full h-full flex flex-col justify-end sm:items-center items-start px-4"
                   style={{
                     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.70)),
                     url('${slide.image}')`,
@@ -89,28 +90,28 @@ const ServicosHero = () => {
                     backgroundRepeat: "no-repeat",
                   }}
                 >
-                  <div className="text-start text-white">
-                    <Image
-                      className="mb-4"
-                      src={FullLogoWhite}
-                      width={120}
-                      height={120}
-                      alt="logo"
-                    />
-                    <h3 className="z-40 sm:text-2xl text-smtitles leading-6 relative font-bold uppercase">
+                  <div className="text-start text-white mb-10">
+                    <h3 className="z-40 text-smsubtitles leading-6 relative font-bold uppercase">
                       {slide.title}
                     </h3>
-                    <p className="z-40 sm:text-2xl text-smpara relative">
+                    <p className="z-40text-smpara relative">
                       Cidade: {slide.place}
                     </p>
-                    <p className="z-40 sm:text-2xl text-smpara relative">
+                    <p className="z-40 text-smpara relative">
                       Data: {slide.date}
                     </p>
                     {slide.client && (
-                      <p className="z-40 sm:text-2xl text-smpara relative">
+                      <p className="z-40 text-smpara relative">
                         Cliente: {slide.client}
                       </p>
                     )}
+                    <Image
+                      className="mt-4"
+                      src={FullLogoWhite}
+                      width={100}
+                      height={100}
+                      alt="logo"
+                    />
                   </div>
                 </div>
               </div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { SubmitHandler, useForm } from "react-hook-form";
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 type FormValues = {
@@ -16,28 +15,24 @@ const ContactForm = () => {
 
   const { register, handleSubmit, formState } = useForm<FormValues>();
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    emailjs
-      .send(
-        "service_dm33xco",
-        "template_meu0l8s",
-        {
-          from_name: data.name,
-          from_email: data.email,
-          message: data.message,
-          telephone: data.telephone,
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    try {
+      const response = await fetch("https://formspree.io/f/mrgnpwqq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        "yUkSRiur1yql8qP68"
-      )
-      .then(() => {
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
         setIsOpen(true);
         setTimeout(() => {
           setIsOpen(false);
         }, 3000);
-      })
-      .catch((error) => {
-        console.error("Email sending failed:", error);
-      });
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
   };
 
   return (
@@ -57,7 +52,11 @@ const ContactForm = () => {
           </div>
         </div>
       )}
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form
+        method="POST"
+        action="https://formspree.io/f/mrgnpwqq"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className="mb-4">
           <label
             htmlFor="name"

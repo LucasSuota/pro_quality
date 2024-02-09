@@ -2,7 +2,7 @@
 
 import { weGuaranteeList } from "@/constants";
 import { WeGuaranteCard } from ".";
-import { inView, motion, useAnimation, useInView } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 
 const WhyProQuality = () => {

@@ -58,24 +58,24 @@ export const weGuaranteeList = [
   { title: "TRANSPARÊNCIA E COMUNICAÇÃO", logo: Speech },
 ];
 
-export const projetosRealizadosPreview = [
+export const realizedProjects = [
   {
     title: "Ensaio de deflexão viga benkelman",
     date: "19/12/2023",
-    image: projetosImagens[0].url,
+    image: "/assets/images/projetos/ensaiodeflexao.jpeg",
     place: "Contorno Leste - São José dos Pinhais",
     client: "Terrinter topografia",
   },
   {
     title: "Serviço de sondagem a trado",
-    date: "16/12/2023",
-    image: projetosImagens[1].url,
+    date: "16/01/2023",
+    image: "/assets/images/projetos/sondagematrado.jpeg",
     place: "Contorno Leste - São José dos Pinhais",
   },
   {
     title: "Ensaio de densidade INSITU",
     date: "22/01/2024",
-    image: projetosImagens[2].url,
+    image: "/assets/images/projetos/ensaiodensidade.jpeg",
     place: "Rua Dom Predo I - Contenda PR",
     client: "AACS engenharia e empreendimentos",
   },
