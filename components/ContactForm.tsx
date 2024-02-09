@@ -16,10 +16,23 @@ const ContactForm = () => {
   const { register, handleSubmit, formState } = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
-    setIsOpen(true);
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 3000);
+    try {
+      const response = await fetch("https://formspree.io/f/mrgnpwqq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        setIsOpen(true);
+        setTimeout(() => {
+          setIsOpen(false);
+        }, 3000);
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+    }
   };
 
   return (
