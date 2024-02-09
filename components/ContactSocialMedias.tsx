@@ -24,10 +24,10 @@ const ContactSocialMedias = () => {
         </p>
         <div className="flex flex-row gap-10 items-start mt-2">
           <Link href={"https://www.instagram.com/mf_orlowski"}>
-            <LinkedInIcon className=" w-[64px] sm:w-[82px] h-[64px] sm:h-[82px]  text-problue hover:text-problack transition-all" />
+            <LinkedInIcon className=" w-[64px] sm:w-[70px] h-[64px] sm:h-[82px]  text-problue hover:text-problack transition-all" />
           </Link>
           <Link href={"https://wa.me/5541998865360"}>
-            <WhatsAppIcon className=" w-[64px] sm:w-[82px] h-[64px] sm:h-[82px]  text-problue hover:text-problack transition-all" />
+            <WhatsAppIcon className=" w-[64px] sm:w-[70px] h-[64px] sm:h-[82px]  text-problue hover:text-problack transition-all" />
           </Link>
         </div>
       </div>

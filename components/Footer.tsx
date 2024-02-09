@@ -21,7 +21,7 @@ const Footer = () => {
         <nav className="flex sm:flex-row flex-col gap-4">
           {footerItems.map((item, index) => (
             <Link href={item.link} key={index}>
-              <p className="font-proquality sm:text-para text-smpara text-white hover:text-progray active:text-problue transition-all">
+              <p className="font-proquality text-smpara text-white hover:text-progray active:text-problue transition-all">
                 {item.title}
               </p>
             </Link>
