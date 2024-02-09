@@ -8,7 +8,6 @@ import RealizedProjectsPreview from "./RealizedProjectsPreview";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import Presentation from "./Presentation";
-import AllServices from "./AllServices";
 import ContactAddress from "./ContactAddress";
 import ContactForm from "./ContactForm";
 import ContactSocialMedias from "./ContactSocialMedias";
@@ -25,7 +24,6 @@ export {
   Footer,
   Contact,
   Presentation,
-  AllServices,
   ContactAddress,
   ContactForm,
   ContactSocialMedias,
