@@ -22,7 +22,7 @@ const ServicosPrestados = () => {
         <div className="mt-10">
           <div className="flex items-center justify-start gap-4 flex-row p-4">
             <Image src={Check} width={30} height={30} alt="check" />
-            <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
+            <h3 className="sm:text-subtitles text-problue text-smsubtitles text-left">
               {servicosDeControleDeQualidade.title}
             </h3>
           </div>
@@ -52,7 +52,7 @@ const ServicosPrestados = () => {
                   </AccordionDetails>
                 ))}
               </Accordion>
-            )
+            ),
           )}
         </div>
       </div>
@@ -61,7 +61,7 @@ const ServicosPrestados = () => {
         <div className="text-left mt-10">
           <div className="flex items-center justify-start gap-4 flex-row p-4">
             <Image src={Pavimentação} width={30} height={30} alt="check" />
-            <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
+            <h3 className="sm:text-subtitles text-problue text-smsubtitles text-left">
               {projetoDePavimentação.title}
             </h3>
           </div>
@@ -98,7 +98,7 @@ const ServicosPrestados = () => {
         <div className="text-left mt-10">
           <div className="flex items-center justify-start gap-4 flex-row p-4">
             <Image src={Search} width={30} height={30} alt="check" />
-            <h3 className="sm:text-subtitles font-bold text-problue text-smsubtitles ">
+            <h3 className="sm:text-subtitles text-problue text-smsubtitles text-left">
               {servicosDeVistoria.title}
             </h3>
           </div>
@@ -118,7 +118,7 @@ const ServicosPrestados = () => {
                 aria-controls="panel1-content"
                 id="panel1-header"
               >
-                <p className="text-smsubtitles">{item.title}</p>
+                <p className="text-smsubtitles text-problack">{item.title}</p>
               </AccordionSummary>
               <AccordionDetails>
                 <div>
