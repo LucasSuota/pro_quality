@@ -17,7 +17,7 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
-      const response = await fetch("https://formspree.io/f/mrgnpwqq", {
+      const response = await fetch("https://formspree.io/f/xzbnrbbl", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
