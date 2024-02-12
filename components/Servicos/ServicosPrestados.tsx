@@ -52,7 +52,7 @@ const ServicosPrestados = () => {
                   </AccordionDetails>
                 ))}
               </Accordion>
-            ),
+            )
           )}
         </div>
       </div>
@@ -85,7 +85,7 @@ const ServicosPrestados = () => {
             <AccordionDetails>
               <div className="px-2">
                 {projetoDePavimentação.items.map((item, index) => (
-                  <p className="mt-2 font-bold" key={index}>
+                  <p className="mt-6" key={index}>
                     {item}
                   </p>
                 ))}
