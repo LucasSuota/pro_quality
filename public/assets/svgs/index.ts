@@ -6,7 +6,7 @@ import Search from "./search.svg";
 import MenuIcon from "./menu.svg";
 import ArrowDown from "./arrow_drop_down.svg";
 import ArrowUp from "./arrow_drop_up.svg";
-import FullLogoBlue from './fulllogo_blue.svg'
+import FullLogoBlue from "./fulllogo_blue.svg";
 
 export {
   Gear,
@@ -17,5 +17,5 @@ export {
   MenuIcon,
   ArrowDown,
   ArrowUp,
-  FullLogoBlue
+  FullLogoBlue,
 };

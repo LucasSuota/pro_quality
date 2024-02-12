@@ -3,7 +3,7 @@ import {
   ContactForm,
   ContactSocialMedias,
   ContactTitle,
-} from ".";
+} from "..";
 
 const Contact = () => {
   return (

@@ -1,6 +1,6 @@
 import { realizedProjects } from "@/constants";
 import Image from "next/image";
-import DefaultButton from "./Buttons/DefualtButton";
+import DefaultButton from "../Buttons/DefualtButton";
 
 const RealizedProjectsPreview = () => {
   const sortedProjects = realizedProjects.sort((a, b) => {

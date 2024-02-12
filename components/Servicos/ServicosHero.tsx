@@ -41,12 +41,16 @@ const ServicosHero = () => {
                   <h3 className="z-40 sm:text-smtitles text-smtitles leading-6 relative font-bold uppercase text-problue">
                     {slide.title}
                   </h3>
-                  <p className="z-40 sm:text-smbubtitles text-smpara relative">
-                    Cidade: {slide.place}
-                  </p>
-                  <p className="z-40 sm:text-smbubtitles text-smpara relative">
-                    Data: {slide.date}
-                  </p>
+                  {slide.place && (
+                    <p className="z-40 sm:text-smbubtitles text-smpara relative">
+                      Cidade: {slide.place}
+                    </p>
+                  )}
+                  {slide.date && (
+                    <p className="z-40 sm:text-smbubtitles text-smpara relative">
+                      Data: {slide.date}
+                    </p>
+                  )}
                   {slide.client && (
                     <p className="z-40 sm:text-smbubtitles text-smpara relative">
                       Cliente: {slide.client}

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { HeaderMenu } from ".";
+import { HeaderMenu } from "..";
 import Link from "next/link";
 import { FullLogoBlack } from "@/public/assets/images";
 

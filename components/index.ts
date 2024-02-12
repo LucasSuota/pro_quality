@@ -1,23 +1,22 @@
-import Header from "./Header";
-import HeaderMenu from "./HeaderMenu";
-import Hero from "./Hero";
-import Services from "./Services";
-import WeGuaranteCard from "./WeGuaranteCard";
-import WhyProQuality from "./WhyProQuality";
-import RealizedProjectsPreview from "./RealizedProjectsPreview";
-import Footer from "./Footer";
-import Contact from "./Contact";
-import Presentation from "./Presentation";
-import ContactAddress from "./ContactAddress";
-import ContactForm from "./ContactForm";
-import ContactSocialMedias from "./ContactSocialMedias";
-import ContactTitle from "./ContactTitle";
+import Header from "./Common/Header";
+import HeaderMenu from "./Common/HeaderMenu";
+import Hero from "./Home/Hero";
+import WeGuaranteCard from "./Home/WeGuaranteCard";
+import WhyProQuality from "./Home/WhyProQuality";
+import RealizedProjectsPreview from "./Home/RealizedProjectsPreview";
+import Services from "./Home/Services";
+import Footer from "./Common/Footer";
+import Contact from "./Contact/Contact";
+import Presentation from "./QuemSomos/Presentation";
+import ContactAddress from "./Contact/ContactAddress";
+import ContactForm from "./Contact/ContactForm";
+import ContactSocialMedias from "./Contact/ContactSocialMedias";
+import ContactTitle from "./Contact/ContactTitle";
 
 export {
   Header,
   HeaderMenu,
   Hero,
-  Services,
   WhyProQuality,
   WeGuaranteCard,
   RealizedProjectsPreview,
@@ -28,4 +27,5 @@ export {
   ContactForm,
   ContactSocialMedias,
   ContactTitle,
+  Services,
 };

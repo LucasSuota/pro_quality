@@ -2,6 +2,7 @@
 
 import { HeaderMenuItemsList } from "@/constants";
 import { Close, MenuIcon } from "@/src/assets/svgs";
+
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";

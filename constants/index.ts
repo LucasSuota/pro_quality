@@ -79,6 +79,19 @@ export const realizedProjects = [
     place: "Rua Dom Predo I - Contenda PR",
     client: "AACS engenharia e empreendimentos",
   },
+  {
+    title: "Ensaio de CBR",
+    date: "15/02/2024",
+    image: "/assets/images/projetos/ensaiodecbr.jpeg",
+    place: "São José dos Pinhais",
+    client: "Secretaria Municipal do Meio Ambiente de São José dos Pinhais",
+  },
+  {
+    title: "Ensaio de Granulometria",
+    date: "09/02/2024",
+    image: "/assets/images/projetos/ensaiogranulometria.jpeg",
+    client: "Mineração Costa",
+  },
 ];
 
 export const servicosDeControleDeQualidade = {

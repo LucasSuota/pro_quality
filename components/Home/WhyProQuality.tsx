@@ -1,7 +1,7 @@
 "use client";
 
 import { weGuaranteeList } from "@/constants";
-import { WeGuaranteCard } from ".";
+import { WeGuaranteCard } from "..";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 

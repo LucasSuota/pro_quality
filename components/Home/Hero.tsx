@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FullLogoWhite } from "@/public/assets/images";
-import DefaultButton from "./Buttons/DefualtButton";
+import DefaultButton from "../Buttons/DefualtButton";
 
 const Hero = () => {
   return (

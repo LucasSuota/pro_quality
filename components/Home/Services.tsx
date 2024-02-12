@@ -1,5 +1,5 @@
 import { servicesList } from "@/constants";
-import DefaultButton from "./Buttons/DefualtButton";
+import DefaultButton from "../Buttons/DefualtButton";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
