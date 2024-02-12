@@ -22,7 +22,7 @@ const Hero = () => {
             src={FullLogoWhite}
             width={150}
             height={150}
-            alt="logo"
+            alt="ProQuality Engenharia Logo"
           />
           <h1 className="sm:text-4xl text-3xl font-proquality text-white font-semibold">
             CONTROLE DE QUALIDADE, PROJETOS E VISTORIA

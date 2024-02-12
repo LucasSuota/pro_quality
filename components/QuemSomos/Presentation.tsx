@@ -10,14 +10,14 @@ const Presentation = () => {
             src={CivilEngineer}
             style={{ objectFit: "cover" }}
             fill
-            alt="Logo"
+            alt="ProQuality Engenharia Logo"
           />
         </div>
         <div className="sm:w-1/4 w-full sm:px-0 px-5 min-h-screen flex flex-col gap-4 items-start font-proquality">
           <div className="w-[50px] h-[2px] bg-problue mt-10" />
-          <h3 className="sm:text-5xl text-smtitles sm:mt-20 mt-4 leading-6 text-problue font-bold ">
+          <h1 className="sm:text-5xl text-smtitles sm:mt-20 mt-4 leading-6 text-problue font-bold ">
             PROQUALITY ENGENHARIA
-          </h3>
+          </h1>
           <p className="text-smpara">
             A ProQuality Engenharia é uma empresa dedicada à excelência nos
             serviços de ensaios em obras de pavimentação e construção civil, bem
