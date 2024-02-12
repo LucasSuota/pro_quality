@@ -7,8 +7,8 @@ const ContactTitle = () => {
         Contato
       </h2>
       <p className="font-proquality sm:text-smpara text-smpara">
-        Nos envie um mensagem ou entre em contato com conosco via redes sociais
-        ou email.
+        Nos envie uma mensagem ou entre em contato conosco via redes sociais ou
+        email.
       </p>
     </div>
   );

@@ -31,7 +31,7 @@ const Footer = () => {
           <Link href={"https://www.linkedin.com/in/maiconorlowski/"}>
             <LinkedInIcon className="w-[32px] h-[32px] text-white hover:text-progray" />
           </Link>
-          <Link href={"https://wa.me/554184015100"}>
+          <Link href={"https://wa.me/5541998865360"}>
             <WhatsAppIcon className="w-[32px] h-[32px] text-white hover:text-progray" />
           </Link>
         </div>
