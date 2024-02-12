@@ -25,7 +25,7 @@ const WhyProQuality = () => {
           style={{ width: "50px", height: "2px", background: "#195973" }}
         />
         <p className="mt-10 sm:mx-20 mx-5 text-start text-smpara">
-          Ao escolher a <b className="text-problue">Proquality Engenharia</b>,
+          Ao escolher a <b className="text-problue">ProQuality Engenharia</b>,
           você está optando por um parceiro comprometido com a{" "}
           <b className="text-problue">excelência</b> e a{" "}
           <b className="text-problue">confiabilidade.</b> Nossa equipe

@@ -1,5 +1,3 @@
-"use client";
-
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useState } from "react";
 
@@ -17,18 +15,20 @@ const ContactForm = () => {
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
-      const response = await fetch("https://formspree.io/f/xzbnrbbl", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-      if (response.ok) {
-        setIsOpen(true);
-        setTimeout(() => {
-          setIsOpen(false);
-        }, 3000);
+      if (process.env.API_KEY) {
+        const response = await fetch(process.env.API_KEY, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+        if (response.ok) {
+          setIsOpen(true);
+          setTimeout(() => {
+            setIsOpen(false);
+          }, 3000);
+        }
       }
     } catch (error) {
       console.error("Form submission error:", error);
