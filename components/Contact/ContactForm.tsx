@@ -16,9 +16,16 @@ const ContactForm = () => {
   const { register, handleSubmit, formState } = useForm<FormValues>();
 
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    const getUrl = () => {
+      const data = process.env.FORMSPREE_URL_TEST;
+      return data;
+    };
+
     try {
-      if (process.env.FORMSPREE_URL_TEST) {
-        const response = await fetch(process.env.FORMSPREE_URL_TEST, {
+      const url = getUrl();
+      console.log(url);
+      if (url) {
+        const response = await fetch(url, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
