@@ -67,7 +67,7 @@ export const realizedProjects = [
   },
   {
     title: "Serviço de sondagem a trado",
-    date: "16/01/2023",
+    date: "16/12/2023",
     image: "/assets/images/projetos/sondagematrado.jpeg",
     place: "São José dos Pinhais, Paraná",
   },
