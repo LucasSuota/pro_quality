@@ -4,6 +4,7 @@ import { weGuaranteeList } from "@/constants";
 import { WeGuaranteCard } from "..";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
+import Head from "next/head";
 
 const WhyProQuality = () => {
   const ref = useRef(null);
@@ -16,6 +17,13 @@ const WhyProQuality = () => {
 
   return (
     <section className="w-full bg-progray">
+      <Head>
+        <title>Nossa Empresa</title>
+        <meta
+          name="Excelência e Confiabilidade"
+          content="Expertise técnica, comprometimento com a qualidade, antecipação de problemas, transparência e comunicação"
+        />
+      </Head>
       <motion.section className="max-w-screen-lg mx-auto text-center mt-20 py-20">
         <h2 className="w-[200px] mx-auto leading-7 font-proquality sm:text-titles text-smtitles font-bold text-problue">
           POR QUE A PROQUALITY?

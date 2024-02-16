@@ -3,10 +3,18 @@ import DefaultButton from "../Buttons/DefualtButton";
 import { Accordion, AccordionDetails, AccordionSummary } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Image from "next/image";
+import Head from "next/head";
 
 const Services = () => {
   return (
     <section className="sm:max-w-screen-lg mx-auto flex flex-col items-center justify-center mt-10">
+      <Head>
+        <title>Controle de Qualidade, Projetos e Vistoria</title>
+        <meta
+          name="Controle de Qualidade, Projetos e Vistoria em obras"
+          content="Controle de Qualidade, Projetos de Pavimentação e Vistoria em Obras"
+        />
+      </Head>
       <h2 className="font-proquality font-bold sm:text-titles text-smtitles text-problue">
         SERVIÇOS
       </h2>

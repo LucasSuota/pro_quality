@@ -1,9 +1,17 @@
 import Image from "next/image";
 import { CivilEngineer, FullLogoBlack } from "@/public/assets/images";
+import Head from "next/head";
 
 const Presentation = () => {
   return (
     <section>
+      <Head>
+        <title>ProQuality Engenharia</title>
+        <meta
+          name="description"
+          content="ProQuality Engenharia | Controle de Qualidade em obras | Projetos de Pavimentação | Vistoria em obras"
+        />
+      </Head>
       <div className="w-full mx-auto flex sm:flex-row flex-col sm:gap-10 gap-2 items-center sm:mb-0 mb-20">
         <div className="relative sm:w-2/4 w-full px-10 sm:h-screen h-[300px]">
           <Image

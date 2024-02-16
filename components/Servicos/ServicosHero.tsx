@@ -9,11 +9,39 @@ import Image from "next/image";
 
 import { FullLogoBlack, FullLogoWhite } from "@/public/assets/images";
 import { FullLogoBlue } from "@/public/assets/svgs";
+import Head from "next/head";
 
 const ServicosHero = () => {
   return (
     <>
       <div className="w-full text-center hidden sm:flex items-center justify-center">
+        <Head>
+          <title>
+            Ensaio CBR, Granulometria, INSITU, Viga Benkelman, Sondagem a trado,
+            Trado
+          </title>
+          <meta
+            name="CBR, Granulometria, INSITU, Benkelman, Sondagem a trado, trado, proctor, lamelaridade"
+            content="Controle de Qualidade Solos"
+          />
+          <meta
+            name="Extração de corpos de prova com sonda rotativa, corpos de prova, sonda rotativa, betume, teor, ligantes, compactação, marshall"
+            content="Controle de Qualidade Asfalto"
+          />
+
+          <meta
+            name="Moldagem de corpos de prova, corpos de prova, moldagem, ensaio de resistência à compressão, slump test, corpos de prova, sonda rotativa"
+            content="Controle de Qualidade Concreto"
+          />
+          <meta
+            name="description"
+            content="Vistoria de recebimento de obra: avaliação, conformidade, defeitos, documentação e recebimento oficial."
+          />
+          <meta
+            name="keywords"
+            content="vistoria, recebimento, obra, conformidade, defeitos, documentação, recebimento oficial"
+          />
+        </Head>
         <Swiper
           className="w-full h-screen flex items-center justify-center"
           spaceBetween={0}

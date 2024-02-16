@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FullLogoWhite } from "@/public/assets/images";
 import DefaultButton from "../Buttons/DefualtButton";
+import Head from "next/head";
 
 const Hero = () => {
   return (
@@ -24,6 +25,18 @@ const Hero = () => {
             height={150}
             alt="ProQuality Engenharia Logo"
           />
+          <Head>
+            <title>CONTROLE DE QUALIDADE, PROJETOS E VISTORIA EM OBRAS</title>
+            <meta
+              name="Servicos de vistoria, projetos de pavimentação e vistoria em obras"
+              content="Proquality Engenharia"
+            />
+            <meta
+              name="description"
+              content="Serviços de vistoria, projetos de pavimentação e vistoria em obras"
+              key="desc"
+            />
+          </Head>
           <h1 className="sm:text-4xl text-3xl font-proquality text-white font-semibold">
             CONTROLE DE QUALIDADE, PROJETOS E VISTORIA
           </h1>
