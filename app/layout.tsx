@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   title: "PROQUALITY ENGENHARIA",
   description: "Controle de Qualidade e Vistoria de Obras",
   keywords: [
-    "controle de qualidade",
-    "vistoria de obras",
-    "engenharia civil",
-    "proquality engenharia",
+    "Laboratório de Obras em Curitiba",
+    "vistoria de obras em Curitiba",
+    "engenharia civil em curitiba",
+    "proquality engenharia em curitiba",
   ],
 };
 

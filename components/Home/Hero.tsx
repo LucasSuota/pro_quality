@@ -26,16 +26,19 @@ const Hero = () => {
             alt="ProQuality Engenharia Logo"
           />
           <Head>
-            <title>CONTROLE DE QUALIDADE, PROJETOS E VISTORIA EM OBRAS</title>
-            <meta
-              name="Servicos de vistoria, projetos de pavimentação e vistoria em obras"
-              content="Proquality Engenharia"
-            />
+            <title>
+              Laboratório de Obras em Curitiba | Análise e Testes de Qualidade
+            </title>
             <meta
               name="description"
-              content="Serviços de vistoria, projetos de pavimentação e vistoria em obras"
-              key="desc"
+              content="Descubra o laboratório de obras líder em Curitiba, especializado em análise e testes de qualidade para projetos de construção civil. Serviços de ensaios laboratoriais confiáveis, controle de qualidade e projetos de pavimentação para garantir a segurança e durabilidade de suas obras."
             />
+            <meta
+              name="keywords"
+              content="laboratório de obras, análise de qualidade, testes de construção, Curitiba, ensaios laboratoriais, segurança na construção, durabilidade de obras, controle de qualidade, engenharia civil"
+            />
+            <meta name="author" content="ProQuality Engenharia" />
+            <meta name="robots" content="index, follow" />
           </Head>
           <h1 className="sm:text-4xl text-3xl font-proquality text-white font-semibold">
             CONTROLE DE QUALIDADE, PROJETOS E VISTORIA

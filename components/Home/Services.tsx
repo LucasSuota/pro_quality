@@ -11,8 +11,14 @@ const Services = () => {
       <Head>
         <title>Controle de Qualidade, Projetos e Vistoria</title>
         <meta
-          name="Controle de Qualidade, Projetos e Vistoria em obras"
-          content="Controle de Qualidade, Projetos de Pavimentação e Vistoria em Obras"
+          name="description"
+          content="Controle de Qualidade e Vistoria de Obras em Curitiba e região metropolitana, para garantir a segurança de sua obras."
+        />
+        <meta
+          name="keywords"
+          content="
+        Ensaio CBR, Sondagem a Trado, Trado, Densidade INSITU, Granulometria, Proctor, Benkelman, Lameridade
+        "
         />
       </Head>
       <h2 className="font-proquality font-bold sm:text-titles text-smtitles text-problue">
