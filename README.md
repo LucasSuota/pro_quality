@@ -9,27 +9,17 @@ This is the presentation website of the company, its focus is to attract new cus
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-[![GitHub issues](https://img.shields.io/github/issues/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/issues)
-[![GitHub stars](https://img.shields.io/github/stars/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/network)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/pulls)
-
 ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
 
-List the key features of the project.
-
 - Framer Motion animations
-- Responsiveness
-- Fast
+- Material UI
+- FormSpreeIO
 
 ## License
 
-This website is property of Maicon Felipe Orlowski
+This website is a property of Maicon Felipe Orlowski
