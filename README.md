@@ -1,1 +1,31 @@
-A Proquality Engenharia é uma empresa dedicada à excelência nos serviços de ensaios em obras de pavimentação e construção civil, bem como vistorias de entrega de obras. Com uma equipe altamente capacitada e comprometida, nosso objetivo é assegurar a qualidade e conformidade em cada projeto que assumimos. Realizamos ensaios especializados para garantir a durabilidade e segurança das estruturas, além de oferecer vistorias abrangentes que antecipam potenciais problemas, proporcionando tranquilidade aos nossos clientes. Na Proquality Engenharia, comprometimento, conhecimento técnico e eficiência são os pilares que fundamentam nossa atuação, tornando-nos a escolha confiável para suas necessidades de controle de qualidade em obras.
+# PROQUALITY Engenharia
+
+This is the presentation website of the company, its focus is to attract new customers to the website and the company itself.
+
+![Project Logo/Preview Image](https://github.com/LucasSuota/pro_quality/assets/109081493/2f35ae39-d3c7-47a9-9a4f-44be73c98236)
+
+
+[![GitHub issues](https://img.shields.io/github/issues/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/issues)
+[![GitHub stars](https://img.shields.io/github/stars/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/network)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/LucasSuota/pro_quality)](https://github.com/LucasSuota/pro_quality/pulls)
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+List the key features of the project.
+
+- Framer Motion animations
+- Responsiveness
+- Fast
+
+## License
+
+This website is property of Maicon Felipe Orlowski
